@@ -1,6 +1,7 @@
 {
     "id": "gpt4all-lora-q4",
     "name": "GPT4ALL-Lora Q4",
+    "icon": "",
     "description": "GPT4ALL-Lora Q4",
     "documentation": "",
     "modelInfo": {
