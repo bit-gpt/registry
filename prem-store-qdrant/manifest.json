@@ -1,0 +1,13 @@
+{
+    "id": "qdrant",
+    "name": "Qdrant",
+    "description": "Qdrant Vectorstore",
+    "documentation": "",
+    "apps": [
+        "store"
+    ],
+    "icon": "",
+    "modelInfo": {},
+    "dockerImage": "qdrant/qdrant:v1.0.3",
+    "defaultPort": 6333
+}
