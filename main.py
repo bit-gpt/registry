@@ -61,6 +61,9 @@ async def load_manifests():
 
             manifests.append(manifest)
 
+    with open("manifests.json", "w") as f:
+        json.dump(manifests, f)
+
 
 @app.get("/")
 async def root():
