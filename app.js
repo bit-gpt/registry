@@ -2,7 +2,7 @@ fetch("https://prem-registry.fly.dev/manifests/")
     .then(response => response.json())
     .then(data => {
         const manifestsDiv = document.getElementById('manifests');
-
+        console.log(data);
         data.forEach(manifest => {
             const card = document.createElement('div');
             card.className = 'card';
@@ -18,26 +18,22 @@ fetch("https://prem-registry.fly.dev/manifests/")
             h2.textContent = manifest.name;
             card.appendChild(h2);
 
-            if (manifest.description) {
+            if (manifest.id) {
                 const p = document.createElement('p');
-                p.textContent = manifest.description;
+                p.textContent = manifest.id;
                 card.appendChild(p);
             }
 
-            if (manifest.documentation) {
-                const a = document.createElement('a');
-                a.href = manifest.documentation;
-                a.textContent = "Documentation";
-                a.target = "_blank";
-                card.appendChild(a);
+            if (manifest.modelInfo.devices && manifest.modelInfo.devices.length > 0) {
+                const p = document.createElement('p');
+                p.textContent = `Devices: ${manifest.modelInfo.devices.join(", ")}`;
+                card.appendChild(p);
             }
 
-            if (manifest.modelInfo) {
-                for (const info in manifest.modelInfo) {
-                    const p = document.createElement('p');
-                    p.textContent = `${info}: ${manifest.modelInfo[info]}`;
-                    card.appendChild(p);
-                }
+            if (manifest.modelInfo.memoryRequirements) {
+                const p = document.createElement('p');
+                p.textContent = `Memory Requirements: ${manifest.modelInfo.memoryRequirements}`;
+                card.appendChild(p);
             }
 
             if (manifest.apps && manifest.apps.length > 0) {
