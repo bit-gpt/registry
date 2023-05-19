@@ -9,7 +9,7 @@ fetch("https://prem-registry.fly.dev/manifests/")
 
             if (manifest.icon) {
                 const img = document.createElement('img');
-                img.src = manifest.icon;
+                img.src = `https://prem-registry.fly.dev${manifest.icon}`;
                 img.alt = manifest.name;
                 card.appendChild(img);
             }
