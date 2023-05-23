@@ -10,12 +10,12 @@
         "weightsName": "vicuna-7b-q4.bin",
         "weightsSize": 4212859520,
         "devices": [
-            "m1"
+            "cpu"
         ],
         "memoryRequirements": "8gb",
         "inferenceTime": "5 tokens per second"
     },
-    "apps": [
+    "interfaces": [
         "chat",
         "embeddings"
     ],

@@ -3,7 +3,7 @@
     "name": "Qdrant",
     "description": "Qdrant Vectorstore",
     "documentation": "",
-    "apps": [
+    "interfaces": [
         "store"
     ],
     "icon": "",

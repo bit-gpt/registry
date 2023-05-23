@@ -9,16 +9,17 @@
         "tokenLimit": 4000,
         "weightsName": "vicuna-7b-q4.bin",
         "weightsSize": 4212859520,
-        "devices": [
-            "m1"
-        ],
         "memoryRequirements": "8gb",
-        "inferenceTime": "5 tokens per second"
+        "inferenceTime": "5 tokens per second",
+        "devices": [
+            "cpu"
+        ]
     },
-    "apps": [
+    "interfaces": [
         "chat",
         "embeddings"
     ],
-    "dockerImage": "ghcr.io/premai-io/prem-chat-gpt4all-lora-q4-m1:latest",
+    "dockerImage": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:latest",
+    "dockerImageGPU": "",
     "defaultPort": 8002
 }

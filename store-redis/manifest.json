@@ -3,7 +3,7 @@
     "name": "Redis",
     "description": "Redis Vectorstore",
     "documentation": "",
-    "apps": [
+    "interfaces": [
         "store"
     ],
     "icon": "",
