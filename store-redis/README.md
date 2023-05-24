@@ -2,9 +2,7 @@
 
 ## Description
 
-Qdrant is a vector similarity search engine designed for storing, searching, and managing points along with their respective payloads. Built with an emphasis on extensive filtering, it is particularly beneficial for neural network matching, semantic-based matching, and faceted search. Qdrant offers various deployment options including local mode, on-premise server deployment, and Qdrant Cloud, each catering to different use-case scenarios.
-
-[Learn More](https://qdrant.tech/documentation/)
+Redis, short for Remote Dictionary Server, serves as a multifunctional in-memory data structure store. It functions as a distributed key-value database, cache, and message broker, all operating in-memory for high-speed data access. With optional durability, Redis ensures data persistence despite potential system failures. [Learn More](https://redis.com/solutions/use-cases/vector-database/)
 
 ## Hardware Requirements
 
