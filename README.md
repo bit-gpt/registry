@@ -1,12 +1,7 @@
 # Prem Registry
 
-## Available Prem Apps
+The repository contains all the services that are exposed and used through the Prem Controller. To learn more about Prem visit https://github.com/premAI-io/prem-box.
 
-- 😃 Prem Chat
-- 📕 Prem Embeddings
-- 🏛️ Prem Store
-
-If you wanna know more about the apps we will support in the future, you can check our product roadmap at https://github.com/premAI-io/prem-box.
 ## Packaging a Service for Prem Registry
 
 1. Clone the repo locally
