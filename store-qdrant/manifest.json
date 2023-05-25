@@ -10,7 +10,7 @@
     "modelInfo": {},
     "dockerImages": {
         "cpu": {
-            "dockerImage": "qdrant/qdrant:v1.0.3"
+            "image": "qdrant/qdrant:v1.0.3"
         }
     },
     "defaultPort": 6333

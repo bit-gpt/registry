@@ -15,7 +15,7 @@
     ],
     "dockerImages": {
         "gpu": {
-            "dockerImage": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:latest"
+            "image": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:latest"
         }
     },
     "defaultPort": 8001

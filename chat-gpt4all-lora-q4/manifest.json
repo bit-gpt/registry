@@ -18,7 +18,7 @@
     ],
     "dockerImages": {
         "cpu": {
-            "dockerImage": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:latest"
+            "image": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:latest"
         }
     },
     "defaultPort": 8002
