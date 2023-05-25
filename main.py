@@ -17,7 +17,7 @@ class Manifest(BaseModel):
     documentation: str
     icon: str
     modelInfo: dict
-    apps: list[str]
+    interfaces: list[str]
     dockerImages: dict
     defaultPort: int
 
