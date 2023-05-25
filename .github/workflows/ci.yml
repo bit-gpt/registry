@@ -6,9 +6,6 @@ env:
   DOCKER_CLI_EXPERIMENTAL: "enabled"
 
 on:
-  pull_request:
-    branches: ["main"]
-
   push:
     branches: ["main"]
 
