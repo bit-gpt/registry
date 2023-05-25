@@ -24,33 +24,9 @@ fetch("https://prem-registry.fly.dev/manifests/")
                 card.appendChild(p);
             }
 
-            if (manifest.modelInfo.devices && manifest.modelInfo.devices.length > 0) {
-                const p = document.createElement('p');
-                p.textContent = `Devices: ${manifest.modelInfo.devices.join(", ")}`;
-                card.appendChild(p);
-            }
-
-            if (manifest.modelInfo.memoryRequirements) {
-                const p = document.createElement('p');
-                p.textContent = `Memory Requirements: ${manifest.modelInfo.memoryRequirements}`;
-                card.appendChild(p);
-            }
-
             if (manifest.apps && manifest.apps.length > 0) {
                 const p = document.createElement('p');
-                p.textContent = `Apps: ${manifest.apps.join(", ")}`;
-                card.appendChild(p);
-            }
-
-            if (manifest.dockerImage) {
-                const p = document.createElement('p');
-                p.textContent = `Docker Image: ${manifest.dockerImage}`;
-                card.appendChild(p);
-            }
-
-            if (manifest.defaultPort) {
-                const p = document.createElement('p');
-                p.textContent = `Default Port: ${manifest.defaultPort}`;
+                p.textContent = `${manifest.apps.join(", ")}`;
                 card.appendChild(p);
             }
 
