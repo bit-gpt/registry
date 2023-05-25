@@ -1,0 +1,17 @@
+{
+    "id": "qdrant",
+    "name": "Qdrant",
+    "description": "Qdrant is a vector similarity search engine designed for storing, searching, and managing points along with their respective payloads. Built with an emphasis on extensive filtering, it is particularly beneficial for neural network matching, semantic-based matching, and faceted search. Qdrant offers various deployment options including local mode, on-premise server deployment, and Qdrant Cloud, each catering to different use-case scenarios. [Learn More](https://qdrant.tech/documentation/)",
+    "documentation": "",
+    "interfaces": [
+        "store"
+    ],
+    "icon": "",
+    "modelInfo": {},
+    "dockerImages": {
+        "cpu": {
+            "dockerImage": "qdrant/qdrant:v1.0.3"
+        }
+    },
+    "defaultPort": 6333
+}
