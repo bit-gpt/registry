@@ -18,7 +18,7 @@ class Manifest(BaseModel):
     icon: str
     modelInfo: dict
     apps: list[str]
-    dockerImage: str
+    dockerImages: dict
     defaultPort: int
 
 
@@ -35,6 +35,8 @@ manifests = []
 
 app.mount("/logos", StaticFiles(directory="."), name="logos")
 
+APPS = ["chat", "store", "copilot", "embeddings"]
+
 
 @app.on_event("startup")
 async def load_manifests():
@@ -42,7 +44,7 @@ async def load_manifests():
     manifests = []
     for folder in os.listdir("."):
         folder_path = os.path.join(".", folder)
-        if os.path.isdir(folder_path) and "prem" in folder_path:
+        if os.path.isdir(folder_path) and any(s in folder_path for s in APPS):
             manifest_path = os.path.join(folder_path, "manifest.json")
             readme_path = os.path.join(folder_path, "README.md")
             logo_path = os.path.join(folder_path, "logo.svg")
