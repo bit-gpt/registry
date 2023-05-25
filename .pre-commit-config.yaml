@@ -1,4 +1,4 @@
-exclude: "^docs/|/migrations/^manifests.json"
+exclude: "^docs/|/migrations/|^manifests.json"
 default_stages: [commit]
 
 repos:
