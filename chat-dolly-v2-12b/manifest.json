@@ -7,16 +7,16 @@
     "modelInfo": {
         "maxLength": 12000,
         "tokenLimit": 4000,
-        "devices": [
-            "gpu"
-        ],
         "memoryRequirements": "24gb",
         "inferenceTime": "5 tokens per second"
     },
     "interfaces": [
         "chat"
     ],
-    "dockerImage": "",
-    "dockerImageGPU": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:latest",
+    "dockerImages": {
+        "gpu": {
+            "dockerImage": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:latest"
+        }
+    },
     "defaultPort": 8001
 }

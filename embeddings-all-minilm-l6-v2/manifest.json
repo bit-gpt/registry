@@ -7,17 +7,23 @@
     "modelInfo": {
         "maxLength": 12000,
         "tokenLimit": 4000,
-        "devices": [
-            "cpu",
-            "gpu"
-        ],
         "memoryRequirements": "8gb",
         "inferenceTime": "5 tokens per second"
+    },
+    "devices": [
+        "cpu",
+        "gpu"
+    ],
+    "dockerImages": {
+        "cpu": {
+            "dockerImage": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:latest"
+        },
+        "gpu": {
+            "dockerImage": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:latest"
+        }
     },
     "interfaces": [
         "embeddings"
     ],
-    "dockerImage": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:latest",
-    "dockerImageGPU": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:latest",
     "defaultPort": 8001
 }

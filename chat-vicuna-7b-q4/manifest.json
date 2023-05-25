@@ -9,9 +9,6 @@
         "tokenLimit": 4000,
         "weightsName": "vicuna-7b-q4.bin",
         "weightsSize": 4212859520,
-        "devices": [
-            "cpu"
-        ],
         "memoryRequirements": "8gb",
         "inferenceTime": "5 tokens per second"
     },
@@ -19,6 +16,10 @@
         "chat",
         "embeddings"
     ],
-    "dockerImage": "ghcr.io/premai-io/prem-chat-vicuna-7b-q4-m1:latest",
+    "dockerImages": {
+        "cpu": {
+            "dockerImage": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:latest"
+        }
+    },
     "defaultPort": 8001
 }
