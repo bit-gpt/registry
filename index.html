@@ -6,6 +6,7 @@
     <title>Prem Registry</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./css/style.css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
     <style>
       .card {
         margin: 1em;
@@ -31,7 +32,7 @@
     </style>
   </head>
 
-  <body>
+  <body x-data="init()" x-init="fetchServices()">
     <section class="bg-[#1D1E24] min-h-screen">
       <div class="container mx-auto lg:py-[100px] py-[50px] px-4">
         <div class="flex flex-wrap justify-between items-center max-md:gap-4">
@@ -57,122 +58,140 @@
           </button>
         </div>
         <div class="flex flex-wrap gap-4 mt-8 mb-16">
-          <button class="btn-outline btn-outline--active">Chat</button>
-          <button class="btn-outline">Embeddings</button>
-          <button class="btn-outline">Store</button>
+          <template x-for="[tag, value] in Array.from(tags.entries())">
+            <button
+              :class="{'btn-outline capitalize': true, 'btn-outline--active': value}"
+              @click="toggleTag(tag)"
+              x-text="tag"
+            ></button>
+          </template>
+          <!-- <button class="btn-outline">Embeddings</button>
+          <button class="btn-outline">Store</button> -->
         </div>
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
-          <div class="registry-card" id="myBtn">
-            <div class="pb-7">
-              <img src="./images/gpt-logo.svg" />
+          <template x-for="service in filteredData()">
+            <div
+              class="registry-card"
+              @click="selectedService = service; open = true"
+            >
+              <div class="pb-7">
+                <img
+                  x-bind:src="'https://prem-registry.fly.dev'+(service.icon)"
+                  width="60"
+                  height="60"
+                />
+              </div>
+              <div class="border-light border-b -mx-8"></div>
+              <h2 x-text="service.name"></h2>
+              <div class="flex gap-3 flex-wrap">
+                <template x-for="tag in service.interfaces">
+                  <button class="btn-outline capitalize" x-text="tag"></button>
+                </template>
+              </div>
             </div>
-            <div class="border-light border-b -mx-8"></div>
-            <h2>GPT4All</h2>
-            <div class="flex gap-3 flex-wrap">
-              <button class="btn-outline">Chat</button>
-              <button class="btn-outline">Embeddings</button>
-            </div>
-          </div>
-          <div class="registry-card">
-            <div class="pb-7">
-              <img src="./images/redis-logo.svg" />
-            </div>
-            <div class="border-light border-b -mx-8"></div>
-            <h2>Redis</h2>
-            <div class="flex gap-3 flex-wrap">
-              <button class="btn-outline">Chat</button>
-              <button class="btn-outline">Embeddings</button>
-            </div>
-          </div>
-          <div class="registry-card">
-            <div class="pb-7">
-              <img src="./images/vicuna-logo.svg" />
-            </div>
-            <div class="border-light border-b -mx-8"></div>
-            <h2>Vicuna 7B 4-Bit</h2>
-            <div class="flex gap-3 flex-wrap">
-              <button class="btn-outline">Chat</button>
-              <button class="btn-outline">Embeddings</button>
-            </div>
-          </div>
-          <div class="registry-card">
-            <div class="pb-7">
-              <img src="./images/qdrant-logo.svg" />
-            </div>
-            <div class="border-light border-b -mx-8"></div>
-            <h2>Qdrant</h2>
-            <div class="flex gap-3 flex-wrap">
-              <button class="btn-outline">Chat</button>
-              <button class="btn-outline">Embeddings</button>
-            </div>
-          </div>
+          </template>
         </div>
       </div>
     </section>
 
-    <div class="modal">
-      <div class="modal-content">
-        <button class="close">&times;</button>
-        <div class="modal-body">
-          <div class="flex gap-6 modal-body__row md:-mx-[50px] -mx-4">
-            <img src="./images/vicuna-logo.svg" alt="logo" />
-            <div>
-              <h2>Vicuna</h2>
-              <p class="text-[#EDEDED] text-[16px] opacity-50">vicuna-7b-q4</p>
+    <template x-if="open">
+      <div class="modal flex">
+        <div class="modal-content">
+          <button class="close" @click="open = false">&times;</button>
+          <div class="modal-body">
+            <div class="flex gap-6 modal-body__row md:-mx-[50px] -mx-4">
+              <img
+                width="60"
+                height="60"
+                x-bind:src="'https://prem-registry.fly.dev'+(selectedService.icon)"
+                x-bind:alt="selectedService.name"
+              />
+
+              <div>
+                <h2 x-text="selectedService.name"></h2>
+                <p
+                  class="text-[#EDEDED] text-[16px] opacity-50"
+                  x-text="selectedService.id"
+                ></p>
+              </div>
             </div>
-          </div>
-          <p class="text-white md:mt-[40px] mb-7 mt-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-          <div class="flex md:gap-[70px] gap-8">
-            <ul class="modal-body__list-name">
-              <li>Devices:</li>
-              <li>Memory Requirements:</li>
-              <li>Apps:</li>
-              <li>Docker Image:</li>
-              <li>Default Port:</li>
-            </ul>
-            <ul class="modal-body__list-name opacity-full">
-              <li>m1</li>
-              <li>8GB</li>
-              <li class="flex gap-3">
-                <button class="btn-outline">Chat</button>
-                <button class="btn-outline">Embeddings</button>
-              </li>
-              <li>gher.io/premai.io/prem-chat-vicuna-7b-q4-m1: latest</li>
-              <li>8001</li>
-            </ul>
+            <p
+              class="text-white md:mt-[40px] mb-7 mt-6"
+              x-text="selectedService.description"
+            ></p>
+            <div class="flex md:gap-[70px] gap-8">
+              <ul class="modal-body__list-name">
+                <li>Memory Requirements:</li>
+                <li>Apps:</li>
+                <li>Docker Image:</li>
+                <li>Default Port:</li>
+              </ul>
+              <ul class="modal-body__list-name opacity-full">
+                <li
+                  x-text="selectedService.modelInfo.memoryRequirements || '-'"
+                ></li>
+                <li class="flex gap-3">
+                  <template x-for="tag in selectedService.interfaces">
+                    <button
+                      class="btn-outline capitalize"
+                      x-text="tag"
+                    ></button>
+                  </template>
+                </li>
+                <li
+                  x-text="selectedService.dockerImages.gpu?.image || selectedService.dockerImages.cpu?.image"
+                ></li>
+                <li x-text="selectedService.defaultPort"></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </template>
 
-    <div id="manifests"></div>
     <script>
-      var modal = document.querySelector(".modal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
-      var closeModal = document.body;
-      btn.onclick = function () {
-        modal.style.display = "flex";
-        closeModal.classList.add("overflow-hidden");
-      };
-      span.onclick = function () {
-        modal.style.display = "none";
-        closeModal.classList.remove("overflow-hidden");
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
+      function init() {
+        return {
+          isLoading: true,
+          data: [],
+          open: false,
+          selectedService: null,
+          tags: [],
+          toggleTag: function (tag) {
+            this.tags.set(tag, !this.tags.get(tag));
+          },
+          filteredData: function () {
+            if (this.isLoading) {
+              return [];
+            }
 
-    <!-- <script src="app.js"></script> -->
+            const values = Array.from(this.tags.values());
+            if (!values.includes(true)) {
+              return this.data;
+            }
+
+            return this.data.filter((service) => {
+              return service.interfaces.some((tag) => {
+                return this.tags.get(tag);
+              });
+            });
+          },
+          fetchServices: function () {
+            fetch("https://prem-registry.fly.dev/manifests/")
+              .then((response) => response.json())
+              .then((data) => {
+                this.data = data;
+                this.isLoading = false;
+                this.tags = new Map();
+                data.forEach((service) => {
+                  service.interfaces.forEach((tag) => {
+                    this.tags.set(tag, false);
+                  });
+                });
+              });
+          },
+        };
+      }
+    </script>
   </body>
 </html>
