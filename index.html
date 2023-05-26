@@ -1,40 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prem Registry</title>
+    <link href="./css/style.css" rel="stylesheet" />
     <style>
-        .card {
-            margin: 1em;
-            padding: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 250px;
-            display: inline-block;
-        }
+      .card {
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 250px;
+        display: inline-block;
+      }
 
-        .card img {
-            width: 100%;
-            height: auto;
-        }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
 
-        .card h2 {
-            font-size: 1.2em;
-        }
+      .card h2 {
+        font-size: 1.2em;
+      }
 
-        .card p {
-            font-size: 1em;
-        }
+      .card p {
+        font-size: 1em;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>Prem Registry</h1>
+  <body>
+    <section class="bg-[#1D1E24] min-h-screen">
+      <div class="container mx-auto lg:py-[100px] py-[50px] px-4">
+        <div class="flex flex-wrap justify-between items-center max-md:gap-4">
+          <h1 class="md:text-[45px] text-[35px] text-white proximaNova-bold">
+            Prem Registry
+          </h1>
+          <button class="btn-primary proximaNova-bold flex items-center gap-2">
+            Install PremAI
+            <span
+              ><svg
+                width="20"
+                height="12"
+                viewBox="0 0 23 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.3906 4.2058L17.81 0.295798C17.724 0.20207 17.6217 0.127675 17.509 0.0769067C17.3962 0.026138 17.2753 0 17.1532 0C17.031 0 16.9101 0.026138 16.7973 0.0769067C16.6846 0.127675 16.5823 0.20207 16.4963 0.295798C16.3239 0.483161 16.2272 0.736613 16.2272 1.0008C16.2272 1.26498 16.3239 1.51844 16.4963 1.7058L19.79 5.2958H0.925197C0.679819 5.2958 0.444492 5.40116 0.270984 5.58869C0.0974758 5.77623 0 6.03058 0 6.2958C0 6.56102 0.0974758 6.81537 0.270984 7.00291C0.444492 7.19044 0.679819 7.2958 0.925197 7.2958H19.8455L16.4963 10.9058C16.4095 10.9988 16.3407 11.1094 16.2937 11.2312C16.2468 11.3531 16.2226 11.4838 16.2226 11.6158C16.2226 11.7478 16.2468 11.8785 16.2937 12.0004C16.3407 12.1222 16.4095 12.2328 16.4963 12.3258C16.5823 12.4195 16.6846 12.4939 16.7973 12.5447C16.9101 12.5955 17.031 12.6216 17.1532 12.6216C17.2753 12.6216 17.3962 12.5955 17.509 12.5447C17.6217 12.4939 17.724 12.4195 17.81 12.3258L21.3906 8.4458C21.9103 7.8833 22.2023 7.1208 22.2023 6.3258C22.2023 5.5308 21.9103 4.7683 21.3906 4.2058Z"
+                  fill="#F49E97"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="flex flex-wrap gap-4 mt-8 mb-16">
+          <button class="btn-outline btn-outline--active">Chat</button>
+          <button class="btn-outline">Embeddings</button>
+          <button class="btn-outline">Store</button>
+        </div>
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+          <div class="registry-card" id="myBtn">
+            <div class="pb-7">
+              <img src="./images/gpt-logo.svg" />
+            </div>
+            <div class="border-light border-b -mx-8"></div>
+            <h2>GPT4All</h2>
+            <div class="flex gap-3 flex-wrap">
+              <button class="btn-outline">Chat</button>
+              <button class="btn-outline">Embeddings</button>
+            </div>
+          </div>
+          <div class="registry-card">
+            <div class="pb-7">
+              <img src="./images/redis-logo.svg" />
+            </div>
+            <div class="border-light border-b -mx-8"></div>
+            <h2>Redis</h2>
+            <div class="flex gap-3 flex-wrap">
+              <button class="btn-outline">Chat</button>
+              <button class="btn-outline">Embeddings</button>
+            </div>
+          </div>
+          <div class="registry-card">
+            <div class="pb-7">
+              <img src="./images/vicuna-logo.svg" />
+            </div>
+            <div class="border-light border-b -mx-8"></div>
+            <h2>Vicuna 7B 4-Bit</h2>
+            <div class="flex gap-3 flex-wrap">
+              <button class="btn-outline">Chat</button>
+              <button class="btn-outline">Embeddings</button>
+            </div>
+          </div>
+          <div class="registry-card">
+            <div class="pb-7">
+              <img src="./images/qdrant-logo.svg" />
+            </div>
+            <div class="border-light border-b -mx-8"></div>
+            <h2>Qdrant</h2>
+            <div class="flex gap-3 flex-wrap">
+              <button class="btn-outline">Chat</button>
+              <button class="btn-outline">Embeddings</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal-content">
+        <button class="close">&times;</button>
+        <div class="modal-body">
+          <div class="flex gap-6 modal-body__row md:-mx-[50px] -mx-4">
+            <img src="./images/vicuna-logo.svg" alt="logo" />
+            <div>
+              <h2>Vicuna</h2>
+              <p class="text-[#EDEDED] text-[16px] opacity-50">vicuna-7b-q4</p>
+            </div>
+          </div>
+          <p class="text-white md:mt-[40px] mb-7 mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <div class="flex md:gap-[70px] gap-8">
+            <ul class="modal-body__list-name">
+              <li>Devices:</li>
+              <li>Memory Requirements:</li>
+              <li>Apps:</li>
+              <li>Docker Image:</li>
+              <li>Default Port:</li>
+            </ul>
+            <ul class="modal-body__list-name opacity-full">
+              <li>m1</li>
+              <li>8GB</li>
+              <li class="flex gap-3">
+                <button class="btn-outline">Chat</button>
+                <button class="btn-outline">Embeddings</button>
+              </li>
+              <li>gher.io/premai.io/prem-chat-vicuna-7b-q4-m1: latest</li>
+              <li>8001</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="manifests"></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      var modal = document.querySelector(".modal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      var closeModal = document.body;
+      btn.onclick = function () {
+        modal.style.display = "flex";
+        closeModal.classList.add("overflow-hidden");
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+        closeModal.classList.remove("overflow-hidden");
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
 
-    <script src="app.js"></script>
-</body>
-
+    <!-- <script src="app.js"></script> -->
+  </body>
 </html>
