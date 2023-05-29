@@ -25,5 +25,5 @@
     "interfaces": [
         "embeddings"
     ],
-    "defaultPort": 8001
+    "defaultPort": 8000
 }
