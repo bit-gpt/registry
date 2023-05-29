@@ -1,0 +1,29 @@
+{
+    "id": "all-minilm-l6-v2",
+    "name": "All-MiniLM-L6-v2",
+    "description": "All-MiniLM-L6-v2 is a sentence-transformers model designed to map sentences and paragraphs to a 384-dimensional dense vector space, ideal for clustering or semantic search tasks. Developed during Hugging Face's Community week, this model is fine-tuned on a 1B sentence pairs dataset with a contrastive learning objective. It excels in encoding short texts, capturing semantic information, and is useful for information retrieval, clustering, or sentence similarity tasks. [Learn More](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)",
+    "documentation": "",
+    "icon": "",
+    "modelInfo": {
+        "maxLength": 12000,
+        "tokenLimit": 4000,
+        "memoryRequirements": 8192,
+        "inferenceTime": "5 tokens per second"
+    },
+    "devices": [
+        "cpu",
+        "gpu"
+    ],
+    "dockerImages": {
+        "cpu": {
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:latest"
+        },
+        "gpu": {
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:latest"
+        }
+    },
+    "interfaces": [
+        "embeddings"
+    ],
+    "defaultPort": 8001
+}
