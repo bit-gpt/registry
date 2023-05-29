@@ -16,10 +16,10 @@
     ],
     "dockerImages": {
         "cpu": {
-            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:latest"
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:0.0.1"
         },
         "gpu": {
-            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:latest"
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:0.0.1"
         }
     },
     "interfaces": [
