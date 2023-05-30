@@ -6,10 +6,49 @@ GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of
 
 ## Hardware Requirements
 
+GPT4All is designed with CPU compatibility in mind, being perfectly capable of running efficiently on CPU hardware equipped with a mere 8GB of RAM. Its optimization for CPU inference means that it can operate seamlessly even on a single CPU core.
 ## Example Usage
 
-## Fine Tuning Instructions & Cost
+> Can you explain what is a large language model?
+
+> Can you give some examples applications?
+
+> Are there any limitations?
+
+> Summarize the above in two sentences.
+
+> Write me a story about a superstar.
+
+## Training / Fine Tuning Costs
+
+After a significant effort spanning four days and a substantial expenditure of $800 for GPU rentals from providers such as Lambda Labs and Paperspace, the resulting model, named gpt4all-lora, is now up and running. This sum includes the costs incurred from several unsuccessful training attempts. In addition to the GPU costs, a further $500 was expended on the OpenAI API. However, with the model's release, the training duration has been drastically reduced. Now, the entire training process can be completed in approximately eight hours using Lambda Labs' DGX A100 8x 80GB setup, at a significantly reduced total cost of $100.
+
+## Default Parameters
+
+For our experiments, we have been using the following parameters:
+
+```python
+temperature=0.2
+top_p=0.95
+stop=[]
+max_tokens=256
+repeat_penalty=1.1
+```
 
 ## Inference Benchmarks
 
 ## Quality Benchmarks
+
+For more information about GPT4All performances and quality you can visit: https://gpt4all.io/index.html.
+
+## Service Technical Details
+
+In order to expose the service we are currently using FastAPI and llama-cpp-python library https://abetlen.github.io/llama-cpp-python/ which is compatible with all ggml models.
+
+```txt
+llama-cpp-python==0.1.43
+```
+
+## Embeddings
+
+The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at http://{container_ip}:8000/docs or at our public services Open API doc at https://mock.prem.ninja/docs
