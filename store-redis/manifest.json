@@ -11,6 +11,7 @@
     "volumePath": "/data",
     "dockerImages": {
         "cpu": {
+            "size": 261514099,
             "image": "redis/redis-stack-server:latest"
         }
     },

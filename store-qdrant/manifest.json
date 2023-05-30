@@ -11,6 +11,7 @@
     "volumePath": "/qdrant/storage",
     "dockerImages": {
         "cpu": {
+            "size": 126913893,
             "image": "qdrant/qdrant:v1.0.3"
         }
     },
