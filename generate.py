@@ -2,8 +2,6 @@ import codecs
 import json
 import os
 
-from markdown import markdown
-
 APPS = ["chat", "store", "copilot", "embeddings"]
 
 manifests = []
@@ -19,7 +17,7 @@ for folder in os.listdir("."):
 
         with codecs.open(readme_path, "r", encoding="utf-8") as f:
             readme_content = f.read()
-            manifest["documentation"] = markdown(readme_content)
+            manifest["documentation"] = readme_content
 
         if os.path.exists(logo_path):
             manifest[
