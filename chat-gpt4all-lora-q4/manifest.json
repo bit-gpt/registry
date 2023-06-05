@@ -11,7 +11,7 @@
         "weightsSize": 4212859520,
         "memoryRequirements": 8192,
         "inferenceTime": "5 tokens per second",
-        "streaming": true
+        "streaming": false
     },
     "interfaces": [
         "chat",
