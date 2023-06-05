@@ -5,10 +5,7 @@
     "documentation": "",
     "icon": "",
     "modelInfo": {
-        "maxLength": 12000,
-        "tokenLimit": 4000,
         "memoryRequirements": 24576,
-        "inferenceTime": "5 tokens per second",
         "streaming": false
     },
     "interfaces": [
