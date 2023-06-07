@@ -1,7 +1,7 @@
 {
     "id": "dolly-v2-12",
     "name": "Dolly-v2-12b",
-    "description": "Dolly-v2-12b, developed by Databricks, is an instruction-following large language model trained on diverse capability domains. It exhibits remarkable instruction following behavior, surpassing the foundation model it's based on, Pythia-12b. The model is particularly designed for commercial use and its inference can be run on various GPU configurations. <a href='https://huggingface.co/databricks/dolly-v2-12b' target='_blank'>Learn More</a>",
+    "description": "Dolly-v2-12b, developed by Databricks, is an instruction-following large language model trained on diverse capability domains. It exhibits remarkable instruction following behavior, surpassing the foundation model it's based on, Pythia-12b. The model is particularly designed for commercial use and its inference can be run on various GPU configurations.",
     "documentation": "",
     "icon": "",
     "modelInfo": {
@@ -17,5 +17,5 @@
             "image": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:0.0.1"
         }
     },
-    "defaultPort": 8000
+    "defaultPort": 8003
 }

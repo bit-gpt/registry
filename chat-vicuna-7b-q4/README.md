@@ -2,13 +2,24 @@
 
 ## Description
 
-Vicuna is an open-source chatbot, fine-tuned on LLaMA using conversations from ShareGPT. Developed collaboratively by a team from UC Berkeley, CMU, Stanford, and UC San Diego, this auto-regressive language model aims to advance research in large language models and chatbots. Primarily designed for researchers and hobbyists in AI and NLP, the model undergoes preliminary evaluations using diverse questions and GPT-4 for output judgment. The current model has been 4-bit quantized using ggml framework. [Learn More](https://vicuna.lmsys.org/)
+Vicuna is an open-source chatbot, fine-tuned on LLaMA using conversations from ShareGPT. Developed collaboratively by a team from UC Berkeley, CMU, Stanford, and UC San Diego, this auto-regressive language model aims to advance research in large language models and chatbots. Primarily designed for researchers and hobbyists in AI and NLP, the model undergoes preliminary evaluations using diverse questions and GPT-4 for output judgment. The current model has been 4-bit quantized using ggml framework <a href='https://vicuna.lmsys.org/' target='_blank'>Learn More</a>.
 
 ## Example Usage
 
 > Can you explain what is a large language model?
 
+Sure! A large language model is a class of machine learning models that are trained on very large amounts of text data. The goal of training these models is to create a representation of human language that can be used for various natural language processing tasks, such as text generation, question- Answering and sentiment analysis. These models typically consist of several layers of neural networks, with each layer representing a different aspect of language (e.g., word meaning, syntax, context). As the model gets larger, it has the ability to learn more abstract representations of language that are more representative of human language understanding.
+
 > Can you give some examples applications?
+
+Large language models have a wide range of applications in natural language processing, here are a few examples:
+
+1. Text generation: Large language models can be used to generate text that sounds like it was written by a human, such as chatbot responses or summaries of long articles.
+2. Question-Answering: Large language models can be trained to answer questions based on the information in a large dataset of text. This is often used in virtual assistants and search engines.
+3. Sentiment analysis: Large language models can be used to understand the sentiment behind a piece of text, such as a customer review or social media post.
+4. Translation: Large language models can be trained to translate text from one language to another, using large amounts of training data from both languages.
+5. Dialogue System: Large language model can help in building dialogue system which can have human-like conversations with users.
+6. Language Modeling: Large language models are used for language modeling task where they are able to mimic the way humans produce and process natural language.
 
 > Are there any limitations?
 
@@ -36,11 +47,11 @@ repeat_penalty=1.1
 
 ### Quality Benchmarks
 
-For more information concerning Vicuna evaluation method you can refer to https://github.com/lm-sys/FastChat/tree/main/fastchat/eval.
+For more information concerning Vicuna evaluation method you can refer to <a href='https://github.com/lm-sys/FastChat/tree/main/fastchat/eval' target='_blank'></a>.
 
 ### Serving Details
 
-In order to expose the service we are currently using FastAPI and llama-cpp-python library https://abetlen.github.io/llama-cpp-python/ which is compatible with all ggml models.
+In order to expose the service we are currently using FastAPI and llama-cpp-python library <a href='https://abetlen.github.io/llama-cpp-python/' target='_blank'></a> which is compatible with all ggml models.
 
 ```txt
 llama-cpp-python==0.1.43
@@ -48,7 +59,7 @@ llama-cpp-python==0.1.43
 
 ### Embeddings
 
-The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at http://{container_ip}:8000/docs or at our public services Open API doc at https://mock.prem.ninja/docs
+The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://IP:PORT/docs` or at our public services Open API doc at <a href='https://mock.prem.ninja/docs' target='_blank'></a>
 
 ## License
 
