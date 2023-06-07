@@ -15,5 +15,6 @@
             "image": "qdrant/qdrant:v1.0.3"
         }
     },
-    "defaultPort": 6333
+    "defaultPort": 6333,
+    "defaultExternalPort": 6333
 }

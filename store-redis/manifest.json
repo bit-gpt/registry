@@ -15,5 +15,6 @@
             "image": "redis/redis-stack-server:latest"
         }
     },
-    "defaultPort": 6379
+    "defaultPort": 6379,
+    "defaultExternalPort": 6379
 }

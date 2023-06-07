@@ -20,5 +20,6 @@
             "image": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:0.0.3"
         }
     },
-    "defaultPort": 8222
+    "defaultPort": 8000,
+    "defaultExternalPort": 8222
 }
