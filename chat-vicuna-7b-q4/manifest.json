@@ -20,5 +20,5 @@
             "image": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:0.0.3"
         }
     },
-    "defaultPort": 8001
+    "defaultPort": 8111
 }
