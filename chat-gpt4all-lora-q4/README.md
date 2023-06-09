@@ -8,26 +8,26 @@ GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of
 
 ### 1️⃣ Prompt: Why do I need to run machine learning models on-premises?
 
-There are several reasons why you might want to run machine learning models on-premises. One reason is that it can provide greater control over the data and model, which can be important for certain use cases. Another reason is that it can allow for faster execution times, as there may not be a need to wait for cloud infrastructure or resources. Additionally, some organizations may have regulatory requirements that require them to keep sensitive data on-premises rather than in the cloud.
+> There are several reasons why you might want to run machine learning models on-premises. One reason is that it can provide greater control over the data and model, which can be important for certain use cases. Another reason is that it can allow for faster execution times, as there may not be a need to wait for cloud infrastructure or resources. Additionally, some organizations may have regulatory requirements that require them to keep sensitive data on-premises rather than in the cloud.
 
 ### 2️⃣ Prompt: How do I run my models on-premises?
 
-You can run your models on-premises by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. Additionally, you may also require specialized hardware such as GPUs for accelerated computing. Once you have all the required resources in place, you can then install the necessary software packages and configure them according to your needs.
+> You can run your models on-premises by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. Additionally, you may also require specialized hardware such as GPUs for accelerated computing. Once you have all the required resources in place, you can then install the necessary software packages and configure them according to your needs.
 
 ### 3️⃣ Prompt: What are the limitations of running my models on-premises?
 
-There are several limitations when running models on-premises such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several limitations when running models on-premises such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
 ### 4️⃣ Prompt: What are the trade-offs of deploying models on-premises I should be aware of?
 
-There are several trade-offs to consider when deploying models on-premises such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several trade-offs to consider when deploying models on-premises such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
 
 ## 🛠️ Technical Details
 
 ### 🔧 Training / Fine Tuning Costs
 
-After a significant effort spanning four days and a substantial expenditure of $800 for GPU rentals from providers such as Lambda Labs and Paperspace, the resulting model, named gpt4all-lora, is now up and running. This sum includes the costs incurred from several unsuccessful training attempts. In addition to the GPU costs, a further $500 was expended on the OpenAI API. 
+> After a significant effort spanning four days and a substantial expenditure of $800 for GPU rentals from providers such as Lambda Labs and Paperspace, the resulting model, named gpt4all-lora, is now up and running. This sum includes the costs incurred from several unsuccessful training attempts. In addition to the GPU costs, a further $500 was expended on the OpenAI API. 
 
 However, with the model's release, the training duration has been drastically reduced. Now, the entire training process can be completed in approximately eight hours using Lambda Labs' DGX A100 8x 80GB setup, at a significantly reduced total cost of $100.
 
