@@ -2,25 +2,25 @@
 
 ## 📌 Description
 
-GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of assistant interactions. By finetuning LLaMA 7B, GPT4All provides an open-source ecosystem to train and deploy efficient, assistant-style large language models locally on consumer-grade CPUs. This democratized approach to AI aims to bolster open research, reproducibility, and promote developments in AI alignment and interpretability. The current model has been 4-bit quantized using ggml framework. [Learn More](https://github.com/nomic-ai/gpt4all).
+GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of assistant interactions. By finetuning LLaMA 7B, GPT4All provides an open-source ecosystem to train and deploy efficient, assistant-style large language models locally on consumer-grade CPUs. This democratized approach to AI aims to bolster open research, reproducibility, and promote developments in AI alignment and interpretability. The current model has been 4-bit quantized using ggml framework. [Learn more](https://github.com/nomic-ai/gpt4all).
 
 ## 📒 Example Usage
 
-### 1️⃣ Prompt: Why do I need to run machine learning models on-premises?
+### 1️⃣ Prompt: Why do I need to run machine learning models on-premise?
 
-> There are several reasons why you might want to run machine learning models on-premises. One reason is that it can provide greater control over the data and model, which can be important for certain use cases. Another reason is that it can allow for faster execution times, as there may not be a need to wait for cloud infrastructure or resources. Additionally, some organizations may have regulatory requirements that require them to keep sensitive data on-premises rather than in the cloud.
+> There are several reasons why you might want to run machine learning models on-premise. One reason is that it can provide greater control over the data and model, which can be important for certain use cases. Another reason is that it can allow for faster execution times, as there may not be a need to wait for cloud infrastructure or resources. Additionally, some organizations may have regulatory requirements that require them to keep sensitive data on-premise rather than in the cloud.
 
-### 2️⃣ Prompt: How do I run my models on-premises?
+### 2️⃣ Prompt: How do I run my models on-premise?
 
-> You can run your models on-premises by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. Additionally, you may also require specialized hardware such as GPUs for accelerated computing. Once you have all the required resources in place, you can then install the necessary software packages and configure them according to your needs.
+> You can run your models on-premise by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. Additionally, you may also require specialized hardware such as GPUs for accelerated computing. Once you have all the required resources in place, you can then install the necessary software packages and configure them according to your needs.
 
-### 3️⃣ Prompt: What are the limitations of running my models on-premises?
+### 3️⃣ Prompt: What are the limitations of running my models on-premise?
 
-> There are several limitations when running models on-premises such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several limitations when running models on-premise such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
-### 4️⃣ Prompt: What are the trade-offs of deploying models on-premises I should be aware of?
+### 4️⃣ Prompt: What are the trade-offs of deploying models on-premise I should be aware of?
 
-> There are several trade-offs to consider when deploying models on-premises such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several trade-offs to consider when deploying models on-premise such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
 
 ## 🛠️ Technical Details
@@ -53,13 +53,34 @@ For more information about GPT4All performances and quality you can visit: https
 
 In order to expose the service we are currently using FastAPI and [llama-cpp-python](https://abetlen.github.io/llama-cpp-python/) library which is compatible with all ggml models.
 
-```txt
+```python
 llama-cpp-python==0.1.43
 ```
 
 ### ⚪️ Embeddings
 
-The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://{container_ip}:8000/docs` or at our public services Open API doc at https://mock.prem.ninja/docs
+The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://{container_ip}:8000/docs` or at our public services [Open API documentation](https://mock.prem.ninja/docs).
+
+### 🦜🔗 Getting Started with Langchain
+
+```python
+!pip install langchain
+!pip install openai
+
+import os
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import AIMessage, HumanMessage
+
+os.environ["OPENAI_API_KEY"] = "random-string"
+
+chat = ChatOpenAI(openai_api_base="http://localhost:8222/api/v1", max_tokens=128)
+
+messages = 
+    HumanMessage(content="Why do I need to run machine learning models on-premise?")
+]
+
+chat(messages)
+```
 
 ## 📜 License
 
