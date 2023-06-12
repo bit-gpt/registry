@@ -2,7 +2,8 @@ import codecs
 import json
 import os
 
-APPS = ["chat", "store", "copilot", "embeddings"]
+APPS = ["chat", "store", "copilot", "embeddings",
+        "diffusion", "text-to-audio", "audio-to-text"]
 
 manifests = []
 for folder in os.listdir("."):
