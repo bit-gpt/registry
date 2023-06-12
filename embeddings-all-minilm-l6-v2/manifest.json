@@ -7,10 +7,6 @@
     "modelInfo": {
         "memoryRequirements": 8192
     },
-    "devices": [
-        "cpu",
-        "gpu"
-    ],
     "dockerImages": {
         "cpu": {
             "size": 1238261448,
