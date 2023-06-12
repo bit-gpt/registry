@@ -1,0 +1,15 @@
+{
+    "id": "whisper-tiny",
+    "name": "Whisper Tiny",
+    "description": "",
+    "documentation": "",
+    "comingSoon": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "audio-to-text"
+    ],
+    "dockerImages": {},
+    "defaultPort": 8000,
+    "defaultExternalPort": 10111
+}

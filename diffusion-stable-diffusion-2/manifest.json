@@ -1,0 +1,15 @@
+{
+    "id": "stable-diffusion-2",
+    "name": "Stable Diffusion 2",
+    "description": "",
+    "documentation": "",
+    "comingSoon": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "diffusion"
+    ],
+    "dockerImages": {},
+    "defaultPort": 8000,
+    "defaultExternalPort": 9222
+}

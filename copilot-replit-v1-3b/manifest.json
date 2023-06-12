@@ -1,0 +1,15 @@
+{
+    "id": "replit-v1-3b",
+    "name": "Replit v1 3B",
+    "description": "",
+    "documentation": "",
+    "comingSoon": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "copilot"
+    ],
+    "dockerImages": {},
+    "defaultPort": 8000,
+    "defaultExternalPort": 10111
+}
