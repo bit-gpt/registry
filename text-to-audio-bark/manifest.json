@@ -1,0 +1,15 @@
+{
+    "id": "bark",
+    "name": "Bark",
+    "description": "",
+    "documentation": "",
+    "comingSoon": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "text-to-audio"
+    ],
+    "dockerImages": {},
+    "defaultPort": 8000,
+    "defaultExternalPort": 10111
+}

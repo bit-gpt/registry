@@ -1,0 +1,15 @@
+{
+    "id": "codet5p-220m-py",
+    "name": "Saleforce 5P 220M Python",
+    "description": "",
+    "documentation": "",
+    "comingSoon": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "copilot"
+    ],
+    "dockerImages": {},
+    "defaultPort": 8000,
+    "defaultExternalPort": 10111
+}
