@@ -7,7 +7,7 @@
     "icon": "",
     "modelInfo": {},
     "interfaces": [
-        "diffusion"
+        "diffuser"
     ],
     "dockerImages": {},
     "defaultPort": 8000,
