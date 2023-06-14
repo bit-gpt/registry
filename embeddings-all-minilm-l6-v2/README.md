@@ -14,7 +14,7 @@ The service is compatible with 🦜🔗[LangChain](https://github.com/hwchase17/
 
 ## ⚒️ Usage
 
-👉 Find an example for using the service with 🦜🔗 LangChain below.
+👉 Find an example for using the service with 🦜🔗 LangChain below:
 
 ```python
 import os
