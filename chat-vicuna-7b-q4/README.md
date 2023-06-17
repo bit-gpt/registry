@@ -83,7 +83,7 @@ llama-cpp-python==0.1.43
 
 The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://IP:PORT/docs` or at our public services Open API doc at <a href='https://mock.prem.ninja/docs' target='_blank'></a>
 
-### Getting Started with Langchain
+### 🦜🔗 Getting Started (using LangChain)
 
 ```python
 !pip install langchain
