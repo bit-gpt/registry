@@ -9,7 +9,12 @@
     "interfaces": [
         "copilot"
     ],
-    "dockerImages": {},
+    "dockerImages": {
+        "cpu": {
+            "size": 5201544171,
+            "image": "ghcr.io/premai-io/copilot-codet5p-220m-py-cpu:0.0.5"
+        }
+    },
     "defaultPort": 8000,
     "defaultExternalPort": 10111
 }
