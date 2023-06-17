@@ -9,7 +9,12 @@
     "interfaces": [
         "audio-to-text"
     ],
-    "dockerImages": {},
+    "dockerImages": {
+        "cpu": {
+            "size": 5565095283,
+            "image": "ghcr.io/premai-io/audio-to-text-whisper-tiny-cpu:0.0.5"
+        }
+    },
     "defaultPort": 8000,
     "defaultExternalPort": 10111
 }

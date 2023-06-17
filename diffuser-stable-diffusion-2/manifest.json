@@ -9,7 +9,16 @@
     "interfaces": [
         "diffuser"
     ],
-    "dockerImages": {},
+    "dockerImages": {
+        "cpu": {
+            "size": 40689160223,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-cpu:0.0.5"
+        },
+        "gpu": {
+            "size": 40689160223,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-gpu:0.0.2"
+        }
+    },
     "defaultPort": 8000,
     "defaultExternalPort": 9222
 }

@@ -9,7 +9,16 @@
     "interfaces": [
         "text-to-audio"
     ],
-    "dockerImages": {},
+    "dockerImages": {
+        "cpu": {
+            "size": 40689160223,
+            "image": "ghcr.io/premai-io/text-to-audio-bark-cpu:0.0.5"
+        },
+        "gpu": {
+            "size": 40689160223,
+            "image": "ghcr.io/premai-io/text-to-audio-bark-gpu:0.0.2"
+        }
+    },
     "defaultPort": 8000,
     "defaultExternalPort": 10111
 }
