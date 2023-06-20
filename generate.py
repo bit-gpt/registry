@@ -2,7 +2,7 @@ import codecs
 import json
 import os
 
-APPS = ["chat", "vector-store", "copilot", "embeddings",
+APPS = ["chat", "vector-store", "coder", "embeddings",
         "diffuser", "text-to-audio", "audio-to-text"]
 
 manifests = []
