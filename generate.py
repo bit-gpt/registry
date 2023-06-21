@@ -1,6 +1,7 @@
 import codecs
 import json
 import os
+import sys
 
 APPS = ["chat", "vector-store", "coder", "embeddings",
         "diffuser", "text-to-audio", "audio-to-text"]
@@ -23,7 +24,7 @@ for folder in os.listdir("."):
         if os.path.exists(logo_path):
             manifest[
                 "icon"
-            ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/main/{folder}/logo.svg"
+            ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/{sys.argv[1]}/{folder}/logo.svg"
         else:
             manifest["icon"] = None
 
