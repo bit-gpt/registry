@@ -11,11 +11,11 @@
     ],
     "dockerImages": {
         "cpu": {
-            "size": 40689160223,
+            "size": 12597230080,
             "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-cpu:0.0.5"
         },
         "gpu": {
-            "size": 40689160223,
+            "size": 25792070158,
             "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-gpu:0.0.2"
         }
     },

@@ -11,11 +11,11 @@
     ],
     "dockerImages": {
         "cpu": {
-            "size": 40689160223,
+            "size": 18381415182,
             "image": "ghcr.io/premai-io/text-to-audio-bark-cpu:0.0.5"
         },
         "gpu": {
-            "size": 40689160223,
+            "size": 33835863375,
             "image": "ghcr.io/premai-io/text-to-audio-bark-gpu:0.0.2"
         }
     },
