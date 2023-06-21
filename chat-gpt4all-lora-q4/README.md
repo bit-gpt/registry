@@ -43,7 +43,11 @@ max_tokens=256
 repeat_penalty=1.1
 ```
 
-### Inference Benchmarks
+### 📏 Inference Benchmarks
+
+Find the chart benchmarking the tokens per second for each Prem Chat services below:
+
+![Tokens per second benchmark for Prem Chat services](https://github.com/premAI-io/prem-registry/blob/readme_changes/tokens_per_seond_benchmark.png)
 
 ### 🔎 Quality Benchmarks
 
