@@ -3,7 +3,7 @@
     "name": "Stable Diffusion 2",
     "description": "",
     "documentation": "",
-    "comingSoon": true,
+    "beta": true,
     "icon": "",
     "modelInfo": {},
     "interfaces": [
