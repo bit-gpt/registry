@@ -43,8 +43,6 @@ max_tokens=256
 repeat_penalty=1.1
 ```
 
-### Inference Benchmarks
-
 ### 🔎 Quality Benchmarks
 
 For more information about GPT4All performances and quality, you can visit: https://gpt4all.io/index.html.
