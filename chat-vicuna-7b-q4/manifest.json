@@ -9,7 +9,8 @@
         "weightsSize": 4212859520,
         "maxCtxTokens": 512,
         "memoryRequirements": 8192,
-        "tokensPerSecond": 7
+        "tokensPerSecond": 7,
+        "streaming": true
     },
     "interfaces": [
         "chat",
