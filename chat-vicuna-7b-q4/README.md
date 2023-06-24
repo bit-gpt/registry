@@ -65,8 +65,6 @@ max_tokens=256
 repeat_penalty=1.1
 ```
 
-### 📏 Inference Benchmarks
-
 ### 🔎 Quality Benchmarks
 
 For more information concerning Vicuna evaluation method you can refer to <a href='https://github.com/lm-sys/FastChat/tree/main/fastchat/eval' target='_blank'></a>.

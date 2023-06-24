@@ -52,22 +52,11 @@ If the models are deployed on-premise using a physical machine or a cluster, the
 In some cases, the models might require access to specific hardware or software components, which might not be available on the target platform.
 
 In some other cases, the deployment method might be restricted by the agreements reached with the providers of the required hardware or software components.
+
 </blockquote>
 
 
 ## 🛠️ Technical Details
-
-### 🔢 Default Parameters
-
-For our experiments, we have been using the following parameters:
-
-```python
-temperature=0.2
-top_p=0.95
-stop=[]
-max_tokens=256
-repeat_penalty=1.1
-```
 
 ### 🦜🔗 Getting Started with Langchain
 
@@ -90,20 +79,11 @@ messages =
 chat(messages)
 ```
 
-
-### 📏 Inference Benchmarks
-
-Find the chart benchmarking the tokens per second for each Prem Chat services below:
-
-![Tokens per second benchmark for Prem Chat services](https://github.com/premAI-io/prem-registry/blob/readme_changes/tokens_per_seond_benchmark.png)
-
 ### 🔎 Quality Benchmarks
 
 According to the known limitations, `dolly-v2-12b` is not state of the art. It is not designed to out-perform more mordern architectures and in fact underperforms `dolly-v1-6b` in some evaluation benchmarks.
 
 Check out the <a href='https://github.com/databrickslabs/dolly#known-limitations' target='_blank'>other limitations</a>.
-
-
 
 ## 📜 License
 

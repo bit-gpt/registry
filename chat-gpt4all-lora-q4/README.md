@@ -43,12 +43,6 @@ max_tokens=256
 repeat_penalty=1.1
 ```
 
-### 📏 Inference Benchmarks
-
-Find the chart benchmarking the tokens per second for each Prem Chat services below:
-
-![Tokens per second benchmark for Prem Chat services](https://github.com/premAI-io/prem-registry/blob/readme_changes/tokens_per_seond_benchmark.png)
-
 ### 🔎 Quality Benchmarks
 
 For more information about GPT4All performances and quality you can visit: https://gpt4all.io/index.html.

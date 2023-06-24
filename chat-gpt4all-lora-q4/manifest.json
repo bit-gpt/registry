@@ -5,11 +5,11 @@
     "description": "GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of assistant interactions. By finetuning LLaMA 7B, GPT4All provides an open-source ecosystem to train and deploy efficient, assistant-style large language models locally on consumer-grade CPUs. This democratized approach to AI aims to bolster open research, reproducibility, and promote developments in AI alignment and interpretability. The current model has been 4-bit quantized using ggml framework.",
     "documentation": "",
     "modelInfo": {
-        "weightsName": "vicuna-7b-q4.bin",
+        "weightsName": "gpt4all-lora-q4.bin",
         "weightsSize": 4212859520,
         "maxCtxTokens": 512,
         "memoryRequirements": 8192,
-        "streaming": true
+        "tokensPerSecond": 6
     },
     "interfaces": [
         "chat",
