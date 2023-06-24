@@ -1,0 +1,24 @@
+{
+    "id": "stable-diffusion-1-5",
+    "name": "Stable Diffusion 1.5",
+    "description": "",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {},
+    "interfaces": [
+        "diffuser"
+    ],
+    "dockerImages": {
+        "cpu": {
+            "size": 12597230080,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-cpu:0.0.5"
+        },
+        "gpu": {
+            "size": 25792070158,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:0.0.2"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 9222
+}
