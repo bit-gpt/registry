@@ -12,15 +12,15 @@ GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of
 
 ### 2️⃣ Prompt: How do I run my models on-premise?
 
-> You can run your models on-premise by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. Additionally, you may also require specialized hardware such as GPUs for accelerated computing. Once you have all the required resources in place, you can then install the necessary software packages and configure them according to your needs.
+> You can run your models on-premise by installing the necessary software and hardware requirements. You will need to have a server or a cluster of servers with sufficient processing power, memory, storage space, and network bandwidth to handle the computational load of your model. You may also require specialized hardware, such as GPUs, for accelerated computing. Once you have all the required resources, you can install the necessary software packages and configure them according to your needs.
 
 ### 3️⃣ Prompt: What are the limitations of running my models on-premise?
 
-> There are several limitations when running models on-premise such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several limitations when running models on-premise, such as high upfront costs for hardware and software, limited scalability due to physical constraints, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
 ### 4️⃣ Prompt: What are the trade-offs of deploying models on-premise I should be aware of?
 
-> There are several trade-offs to consider when deploying models on-premise such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
+> There are several trade-offs to consider when deploying models on-premise, such as increased costs, limited scalability, and a lack of flexibility in terms of deployment options. Additionally, maintaining and upgrading the infrastructure can be time-consuming and costly.
 
 
 ## 🛠️ Technical Details
@@ -29,7 +29,7 @@ GPT4All, developed by Nomic AI, is a chatbot trained over an extensive corpus of
 
 > After a significant effort spanning four days and a substantial expenditure of $800 for GPU rentals from providers such as Lambda Labs and Paperspace, the resulting model, named gpt4all-lora, is now up and running. This sum includes the costs incurred from several unsuccessful training attempts. In addition to the GPU costs, a further $500 was expended on the OpenAI API. 
 
-However, with the model's release, the training duration has been drastically reduced. Now, the entire training process can be completed in approximately eight hours using Lambda Labs' DGX A100 8x 80GB setup, at a significantly reduced total cost of $100.
+However, the training duration has been drastically reduced with the model's release. Now, the entire training process can be completed in approximately eight hours using Lambda Labs' DGX A100 8x 80GB setup, at a significantly reduced total cost of $100.
 
 ### 🔢 Default Parameters
 
@@ -45,11 +45,11 @@ repeat_penalty=1.1
 
 ### 🔎 Quality Benchmarks
 
-For more information about GPT4All performances and quality you can visit: https://gpt4all.io/index.html.
+For more information about GPT4All performances and quality, you can visit: https://gpt4all.io/index.html.
 
 ### 🚀 Serving Details
 
-In order to expose the service we are currently using FastAPI and [llama-cpp-python](https://abetlen.github.io/llama-cpp-python/) library which is compatible with all ggml models.
+To expose the service, we currently use FastAPI and [llama-cpp-python](https://abetlen.github.io/llama-cpp-python/) library which is compatible with all ggml models.
 
 ```python
 llama-cpp-python==0.1.43
@@ -57,9 +57,9 @@ llama-cpp-python==0.1.43
 
 ### ⚪️ Embeddings
 
-The current model supports Embeddings generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://{container_ip}:8000/docs` or at our public services [Open API documentation](https://mock.prem.ninja/docs).
+The current model supports embedding generation too. Another endpoint is exposed for this purpose. You can check out the documentation for each container to see how to use it at `http://{container_ip}:8000/docs` or at our public services [Open API documentation](https://mock.prem.ninja/docs).
 
-### 🦜🔗 Getting Started with Langchain
+### 🦜🔗 Getting Started (using LangChain)
 
 ```python
 !pip install langchain

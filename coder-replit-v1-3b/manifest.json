@@ -7,9 +7,14 @@
     "icon": "",
     "modelInfo": {},
     "interfaces": [
-        "copilot"
+        "coder"
     ],
-    "dockerImages": {},
+    "dockerImages": {
+        "gpu": {
+            "size": 27258256302,
+            "image": "ghcr.io/premai-io/coder-replit-code-v1-3b-gpu:0.0.2"
+        }
+    },
     "defaultPort": 8000,
     "defaultExternalPort": 10111
 }
