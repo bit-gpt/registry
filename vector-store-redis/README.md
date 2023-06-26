@@ -1,12 +1,12 @@
-# Documentation
+# 📑 Documentation
 
-## Description
+## 📌 Description
 
-Redis, short for Remote Dictionary Server, serves as a multifunctional in-memory data structure store. It functions as a distributed key-value database, cache, and message broker, all operating in-memory for high-speed data access. With optional durability, Redis ensures data persistence despite potential system failures. Learn more https://redis.com/solutions/use-cases/vector-database/.
+Redis, short for Remote Dictionary Server, serves as a multifunctional in-memory data structure store. It functions as a distributed key-value database, cache, and message broker, all operating in-memory for high-speed data access. With optional durability, Redis ensures data persistence despite potential system failures. <a href='https://redis.com/solutions/use-cases/vector-database/' target='_blank'>Learn more</a> 🚀.
 
-## Getting Started
+## 👇 Getting Started (Implementation)
 
-The service can be used with Langchain. You can check the official documentation at this link: https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/redis.html. In the code snippet, we are assuming that you are using all-miniLM-l6-v2 model for embeddings generation and the service is running locally on port 8001.
+The service can be used with Langchain. You can check the <a href='https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/redis.html' target='_blank'>official documentation</a>. In the code snippet below, weassume that you are using <a href='https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2' target='_blank'>`all-miniLM-l6-v2`</a> model for embeddings generation and the service is running locally on port 8001.
 
 ```python
 
@@ -63,3 +63,10 @@ query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
+
+## 👀 Intended Uses
+The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
+
+By default, input text longer than 256-word pieces is truncated.
+
+<a href='https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/redis.html' target='_blank'>Learn more</a> 🚀.
