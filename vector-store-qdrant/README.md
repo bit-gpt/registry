@@ -1,10 +1,12 @@
-# Documentation
+# 📑Documentation
 
-## Description
+## 📌 Description
 
-Qdrant is a vector similarity search engine designed for storing, searching, and managing points along with their respective payloads. Built with an emphasis on extensive filtering, it is particularly beneficial for neural network matching, semantic-based matching, and faceted search. Qdrant offers various deployment options including local mode, on-premise server deployment, and Qdrant Cloud, each catering to different use-case scenarios. [Learn More](https://qdrant.tech/documentation/)
+<a href='https://qdrant.tech/' target='_blank'>Qdrant</a> is a vector similarity search engine designed for storing, searching, and managing points along with their respective payloads. Built with an emphasis on extensive filtering, it is particularly beneficial for neural network matching, semantic-based matching, and faceted search. Qdrant offers various deployment options including local mode, on-premise server deployment, and Qdrant Cloud, each catering to different use-case scenarios. <a href='https://qdrant.tech/documentation' target='_blank'>Learn more</a> 🚀.
 
-## Getting Started
+<a href='https://qdrant.tech/documentation' target='_blank'>Learn more</a> 🚀.
+
+## 👇 Getting Started (Implementation)
 
 The service can be used with Langchain or the official qdrant python client (https://github.com/qdrant/qdrant). Below you can find an example using the service with Langchain. In the code snippet, we are assuming that you are using all-miniLM-l6-v2 model for embeddings generation and the service is running locally on port 8001.
 
@@ -68,3 +70,9 @@ query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
+## 👀 Intended Usage
+The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
+
+By default, input text longer than 256-word pieces is truncated.
+
+<a href='https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/qdrant' target='_blank'>Learn more</a> 🚀.
