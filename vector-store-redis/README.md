@@ -64,9 +64,9 @@ docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
 
-## 👀 Intended Uses
+## 👀 Intended Usage
 The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
 
 By default, input text longer than 256-word pieces is truncated.
 
-<a href='https://python.langchain.com/docs/ecosystem/integrations/redis' target='_blank'>Learn more</a> 🚀.
+<a href='https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/redis' target='_blank'>Learn more</a> 🚀.
