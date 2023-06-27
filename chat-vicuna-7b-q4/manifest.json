@@ -9,8 +9,7 @@
         "weightsSize": 4212859520,
         "maxCtxTokens": 512,
         "memoryRequirements": 8192,
-        "tokensPerSecond": 7,
-        "streaming": true
+        "tokensPerSecond": 7
     },
     "interfaces": [
         "chat",
@@ -19,7 +18,7 @@
     "dockerImages": {
         "cpu": {
             "size": 8986449745,
-            "image": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:0.0.5"
+            "image": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:1.0.2"
         }
     },
     "defaultPort": 8000,

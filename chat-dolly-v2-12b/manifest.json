@@ -7,8 +7,7 @@
     "icon": "",
     "modelInfo": {
         "memoryRequirements": 24576,
-        "tokensPerSecond": 18,
-        "streaming": true
+        "tokensPerSecond": 18
     },
     "interfaces": [
         "chat"
@@ -16,7 +15,7 @@
     "dockerImages": {
         "gpu": {
             "size": 40689160223,
-            "image": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:0.0.2"
+            "image": "ghcr.io/premai-io/chat-dolly-v2-12b-gpu:1.0.2"
         }
     },
     "defaultPort": 8000,

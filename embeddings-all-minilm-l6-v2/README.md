@@ -12,8 +12,6 @@ The service is compatible with 🦜🔗<a href='https://github.com/hwchase17/lan
 * `tiktoken` ➡️ <a href='https://pypi.org/project/tiktoken/' target='_blank'>pip install</a>.
 * `openai` ➡️ <a href='https://pypi.org/project/openai/' target='_blank'>pip install</a>.
 
-
-
 ## ⚒️ Usage
 
 👉 Find an example for using the service with 🦜🔗 LangChain below:
@@ -39,10 +37,8 @@ The model is meant to be used as an encoder for single sentences and short parag
 
 By default, input text longer than 256-word pieces is truncated.
 
-
 ## 🔎 Evaluation Results
 For an automated evaluation of this model, see the Sentence Embeddings Benchmark <a href='https://seb.sbert.net' target='_blank'>page</a>.
-
 
 ## ⚖️ License
 
