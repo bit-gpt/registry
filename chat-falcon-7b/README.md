@@ -65,16 +65,27 @@ In some other cases, the deployment method might be restricted by the agreements
 
 import os
 from langchain.chat_models import ChatOpenAI
-from langchain.schema import AIMessage, HumanMessage
+from langchain.chains import LLMChain
+from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
+chat_template = """
+You are an AI assistant in a conversational setting.
+Provide a conversational answer to any question an User asks. Be original, concise, accurate and helpful.
+===================
+User: {user_message}
+Assistant:"""
+prompt = PromptTemplate(
+    input_variables=["user_message"],
+    template=chat_template,
+)
+
+user_message = "Why do I need to run machine learning models on-premise?"
+
 chat = ChatOpenAI(openai_api_base="http://localhost:8448/v1", max_tokens=128)
-
-messages = 
-    HumanMessage(content="Why do I need to run machine learning models on-premise?")
-
-chat(messages)
+chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
+print(chain.run(user_message=user_message))
 ```
 
 ### 🔎 Quality Benchmarks
