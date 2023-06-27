@@ -1,0 +1,23 @@
+{
+    "id": "falcon-7b",
+    "name": "Falcon-7B",
+    "beta": true,
+    "description": "Falcon-7B, developed by TII, is a 7B parameters causal decoder-only model trained on 1,500B tokens of RefinedWeb enhanced with curated corpora. The model is particularly designed for commercial use and its inference can be run on various GPU configurations.",
+    "documentation": "",
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 15073,
+        "tokensPerSecond": 24
+    },
+    "interfaces": [
+        "chat"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 34178461833,
+            "image": "ghcr.io/premai-io/chat-falcon-7b-gpu:1.0.0"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 8448
+}
