@@ -23,7 +23,7 @@ from langchain.embeddings import OpenAIEmbeddings
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
-embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/api/v1")
+embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/v1")
 text = "Prem is an easy to use open source AI platform."
 query_result = embeddings.embed_query(text)
 doc_result = embeddings.embed_documents([text])
