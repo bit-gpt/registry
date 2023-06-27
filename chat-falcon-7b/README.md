@@ -69,7 +69,7 @@ from langchain.schema import AIMessage, HumanMessage
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8448/api/v1", max_tokens=128)
+chat = ChatOpenAI(openai_api_base="http://localhost:8448/v1", max_tokens=128)
 
 messages = 
     HumanMessage(content="Why do I need to run machine learning models on-premise?")
