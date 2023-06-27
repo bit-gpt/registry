@@ -69,4 +69,4 @@ The model is meant to be used as an encoder for single sentences and short parag
 
 By default, input text longer than 256-word pieces is truncated.
 
-<a href='https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/redis.html' target='_blank'>Learn more</a> 🚀.
+<a href='https://python.langchain.com/docs/ecosystem/integrations/redis' target='_blank'>Learn more</a> 🚀.
