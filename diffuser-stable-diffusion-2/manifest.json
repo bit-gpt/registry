@@ -5,7 +5,9 @@
     "documentation": "",
     "beta": true,
     "icon": "",
-    "modelInfo": {},
+    "modelInfo": {
+        "memoryRequirements": 3072
+    },
     "interfaces": [
         "diffuser"
     ],
