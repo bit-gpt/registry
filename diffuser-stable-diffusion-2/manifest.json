@@ -1,7 +1,7 @@
 {
     "id": "stable-diffusion-2",
     "name": "Stable Diffusion 2",
-    "description": "",
+    "description": "Stable Diffusion v2 is an enhanced version of the Stable Diffusion v2-base model, developed by Robin Rombach and Patrick Esser. This model is designed to generate and modify images based on text prompts, utilizing a Latent Diffusion Model with a fixed, pretrained text encoder (OpenCLIP-ViT/H). The model was initially trained from the Stable Diffusion v2-base model and then further trained for an additional 150k steps using a v-objective on the same dataset. It was then resumed for another 140k steps on 768x768 images.",
     "documentation": "",
     "beta": true,
     "icon": "",
@@ -12,7 +12,7 @@
     "dockerImages": {
         "gpu": {
             "size": 25792070158,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-gpu:1.0.1"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-gpu:1.0.2"
         }
     },
     "defaultPort": 8000,
