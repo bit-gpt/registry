@@ -8,19 +8,19 @@ Stable Diffusion v2 is an enhanced version of the Stable Diffusion v2-base model
 
 ### 1️⃣ Prompt: Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
 
-![WS_USl7I](https://github.com/premAI-io/prem-registry/assets/29598954/7c31ed10-620b-445c-a23d-c34e0fa92b43)
+![k5h9_ilY](https://github.com/premAI-io/prem-registry/assets/29598954/49d162c9-a308-466c-a038-9bb54d2009fd)
 
 ### 2️⃣ Prompt: Low polygon panda 3d
 
-![9rHScaSw](https://github.com/premAI-io/prem-registry/assets/29598954/bafa9c5e-02dd-4a76-8c69-d739e508ad2d)
+![hPCoZERY](https://github.com/premAI-io/prem-registry/assets/29598954/51537f29-f4cc-469f-88c4-ad18559cb043)
 
 ### 3️⃣ Prompt: 3d hiper-realistic rick sanchez and morty
 
-![PKVb4jfl](https://github.com/premAI-io/prem-registry/assets/29598954/04223540-b736-4952-9aa4-87e08759cd7d)
+![NWVcWCfw](https://github.com/premAI-io/prem-registry/assets/29598954/667d08ad-7dd7-436f-8e2e-5e05d547653d)
 
 ### 4️⃣ Prompt: Synthwave brad pitt wearing headphones, animated, trending on artstation, portrait
 
-![35pvt7Y9](https://github.com/premAI-io/prem-registry/assets/29598954/cd49a0c4-ec50-44a4-836a-7ea4964b361e)
+![q6yKHgDv](https://github.com/premAI-io/prem-registry/assets/29598954/9b88388d-08b7-4a9a-b9a3-766497b3403a)
 
 ## 🛠️ Technical Details
 
