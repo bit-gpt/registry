@@ -12,11 +12,11 @@
     "dockerImages": {
         "cpu": {
             "size": 12597230080,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-cpu:0.0.5"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-cpu:1.0.1"
         },
         "gpu": {
             "size": 25792070158,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:0.0.2"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:1.0.1"
         }
     },
     "defaultPort": 8000,
