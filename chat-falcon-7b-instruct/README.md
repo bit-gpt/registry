@@ -83,7 +83,7 @@ user_message = "Why do I need to run machine learning models on-premise?"
 
 chat = ChatOpenAI(openai_api_base="http://localhost:8448/v1", max_tokens=128)
 chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
-print(chain.run(user_message=user_message, stop=["\nUser:", "User:"]))
+print(chain.run(user_message=user_message))
 ```
 
 ### 🔎 Quality Benchmarks
@@ -91,6 +91,13 @@ print(chain.run(user_message=user_message, stop=["\nUser:", "User:"]))
 It outperforms comparable open-source models (e.g., MPT-7B, StableLM, RedPajama etc.)
 
 Base model Falcon-7B is trained on English and French data only, and will not generalize appropriately to other languages. Furthermore, as it is trained on a large-scale corpora representative of the web, it will carry the stereotypes and biases commonly encountered online.
+
+### 🚫 Limitations and Biases
+
+We have noticed that the model sometimes generates responses that are not relevant and mostly gibberish like letters and numbers or just repeating the same words. E.g - xjskdafhnwne$. Also we found that it generates hashtag like words like #falcon7b, #falcon7binstruct etc, which seems to be a bias coming from the finetuning data as it is trained on a large-scale corpora representative of the web, it will carry the stereotypes and biases commonly encountered online.
+
+We recommend users of Falcon-7B-Instruct to develop guardrails and to take appropriate precautions for any production use.
+
 
 ## 📜 License
 Falcon-7B was trained on 1,500B tokens of <a href='https://huggingface.co/datasets/tiiuae/falcon-refinedweb' target='_blank'>RefinedWeb</a>, a high-quality filtered and deduplicated web dataset which we enhanced with curated corpora. Significant components from our curated copora were inspired by <a href='https://arxiv.org/abs/2101.00027' target='_blank'>The Pile (Gao et al., 2020).</a>
