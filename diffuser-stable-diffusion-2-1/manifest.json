@@ -3,7 +3,7 @@
     "name": "Stable Diffusion 2.1",
     "description": "",
     "documentation": "",
-    "comingSoon": true,
+    "beta": true,
     "icon": "",
     "modelInfo": {},
     "interfaces": [
@@ -12,11 +12,11 @@
     "dockerImages": {
         "cpu": {
             "size": 12597192256,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-1-base-cpu:0.0.5"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-1-base-cpu:1.0.1"
         },
         "gpu": {
             "size": 25792069689,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-1-base-gpu:0.0.2"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-1-base-gpu:1.0.1"
         }
     },
     "defaultPort": 8000,

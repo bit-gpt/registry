@@ -3,7 +3,7 @@
     "name": "Stable Diffusion 1.5",
     "description": "",
     "documentation": "",
-    "comingSoon": true,
+    "beta": true,
     "icon": "",
     "modelInfo": {},
     "interfaces": [
