@@ -1,7 +1,7 @@
 {
     "id": "stable-diffusion-1-5",
     "name": "Stable Diffusion 1.5",
-    "description": "",
+    "description": "Stable Diffusion v1.5 is a sophisticated text-to-image diffusion model capable of generating high-quality images from textual prompts. Developed by Robin Rombach and Patrick Esser, this model is a significant upgrade from its predecessor, Stable Diffusion v1.2, having been fine-tuned on 595k steps at a resolution of 512x512 on `laion-aesthetics v2 5+` with a 10% drop in text-conditioning to enhance classifier-free guidance sampling.",
     "documentation": "",
     "beta": true,
     "icon": "",
@@ -10,13 +10,9 @@
         "diffuser"
     ],
     "dockerImages": {
-        "cpu": {
-            "size": 12597230080,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-cpu:1.0.1"
-        },
         "gpu": {
             "size": 25792070158,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:1.0.1"
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:1.0.2"
         }
     },
     "defaultPort": 8000,
