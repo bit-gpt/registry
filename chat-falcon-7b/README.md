@@ -58,10 +58,13 @@ In some other cases, the deployment method might be restricted by the agreements
 
 ### 🦜🔗 Getting Started with Langchain
 
+For using falcon-7b in a chat setting we recommend using a Chat Prompt Template as shown below:
 
+```bash
+pip install langchain openai
+```
+    
 ```python
-!pip install langchain
-!pip install openai
 
 import os
 from langchain.chat_models import ChatOpenAI
