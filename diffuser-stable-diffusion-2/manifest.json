@@ -10,10 +10,6 @@
         "diffuser"
     ],
     "dockerImages": {
-        "cpu": {
-            "size": 12597230080,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-cpu:1.0.1"
-        },
         "gpu": {
             "size": 25792070158,
             "image": "ghcr.io/premai-io/diffuser-stable-diffusion-2-base-gpu:1.0.1"
