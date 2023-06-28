@@ -6,7 +6,13 @@ Stable Diffusion v1.5 is a sophisticated text-to-image diffusion model capable o
 
 ## 📒 Example Usage
 
-### 1️⃣ Prompt:
+### 1️⃣ Prompt: Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
+
+### 2️⃣ Prompt: Low polygon panda 3d
+
+### 3️⃣ Prompt: 3d hiper-realistic rick sanchez and morty
+
+### 4️⃣ Prompt: Synthwave brad pitt wearing headphones, animated, trending on artstation, portrait
 
 ## 🛠️ Technical Details
 
