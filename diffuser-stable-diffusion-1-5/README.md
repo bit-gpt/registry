@@ -21,11 +21,11 @@ The service exposes the same endpoints as OpenAI DALL-E does. You can directly u
 import os
 import openai
 
-openai.api_key = "random-string
+openai.api_key = "random-string"
 
 openai.Image.create(
   prompt="A cute baby sea otter",
-  n=2,
+  n=1,
   size="512x512"
 )
 ```
