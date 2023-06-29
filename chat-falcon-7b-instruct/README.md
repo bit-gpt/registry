@@ -72,6 +72,8 @@ import os
 from langchain.schema import HumanMessage
 from langchain.chat_models import ChatOpenAI
 
+os.environ["OPENAI_API_KEY"] = "random-string"
+
 chat = ChatOpenAI(openai_api_base="http://localhost:8448/v1", max_tokens=128)
 messages = [HumanMessage(content="What are the trade-offs of deploying models on-premise I should be aware of?")]
 print(chat(messages))
