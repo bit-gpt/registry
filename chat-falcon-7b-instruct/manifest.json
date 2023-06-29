@@ -6,7 +6,7 @@
     "documentation": "",
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": 14705,
+        "memoryRequirements": 15085,
         "tokensPerSecond": 24
     },
     "interfaces": [
@@ -14,7 +14,7 @@
     ],
     "dockerImages": {
         "gpu": {
-            "size": 34178471958,
+            "size": 34178471850,
             "image": "ghcr.io/premai-io/chat-falcon-7b-instruct-gpu:1.0.0"
         }
     },
