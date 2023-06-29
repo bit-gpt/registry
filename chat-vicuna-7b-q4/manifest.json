@@ -8,7 +8,7 @@
         "weightsName": "vicuna-7b-q4.bin",
         "weightsSize": 4212859520,
         "maxCtxTokens": 512,
-        "memoryRequirements": 8192,
+        "memoryRequirements": 4096,
         "tokensPerSecond": 7
     },
     "interfaces": [
