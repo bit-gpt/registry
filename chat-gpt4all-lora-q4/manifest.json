@@ -8,7 +8,7 @@
         "weightsName": "gpt4all-lora-q4.bin",
         "weightsSize": 4212859520,
         "maxCtxTokens": 512,
-        "memoryRequirements": 8192,
+        "memoryRequirements": 4096,
         "tokensPerSecond": 6
     },
     "interfaces": [
@@ -18,7 +18,7 @@
     "dockerImages": {
         "cpu": {
             "size": 8986459988,
-            "image": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:1.0.2"
+            "image": "ghcr.io/premai-io/chat-gpt4all-lora-q4-cpu:1.0.4"
         }
     },
     "defaultPort": 8000,
