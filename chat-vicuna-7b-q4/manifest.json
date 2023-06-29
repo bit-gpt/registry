@@ -18,7 +18,7 @@
     "dockerImages": {
         "cpu": {
             "size": 8986449745,
-            "image": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:1.0.2"
+            "image": "ghcr.io/premai-io/chat-vicuna-7b-q4-cpu:1.0.4"
         }
     },
     "defaultPort": 8000,
