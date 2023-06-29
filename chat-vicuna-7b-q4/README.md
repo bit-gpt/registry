@@ -94,12 +94,36 @@ from langchain.schema import AIMessage, HumanMessage
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8111/api/v1", max_tokens=128)
+chat = ChatOpenAI(openai_api_base="http://localhost:8111/v1", max_tokens=128)
 
 messages = [
     HumanMessage(content="Can you explain what is a large language model?")
 ]
 chat(messages)
+```
+
+### Speeding Up Inference
+
+By default, the model uses (1/2 + 1) the number of cores available on the underlying hardware. If you want to use more cores, you can pass an arbitrary number to the request parameter `n_threads`. Theoretically, this method will improve inference time.
+
+```json
+{
+  "model": "string",
+  "messages": [
+    {}
+  ],
+  "temperature": 0.2,
+  "top_p": 0.95,
+  "n": 1,
+  "stream": false,
+  "stop": [],
+  "max_tokens": 256,
+  "presence_penalty": 0,
+  "frequence_penalty": 0,
+  "logit_bias": {},
+  "user": "",
+  "n_threads": 0 // this is the parameter required to change in order use more cpu cores.
+}
 ```
 
 ## 📜 License

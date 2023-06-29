@@ -52,7 +52,7 @@ Make payments with Bitcoin and Cryptocurrency. It's a permissionless infrastruct
 """)
 
 # Using sentence transformers all-MiniLM-L6-v2
-embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8001/api/v1")
+embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8001/v1")
 
 # Using locally running Redis
 url = "redis://localhost:6379"
