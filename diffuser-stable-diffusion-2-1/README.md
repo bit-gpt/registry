@@ -2,7 +2,11 @@
 
 ## 📌 Description
 
-Stable Diffusion v2-1 is an advanced version of the Stable Diffusion v2 model, developed by Robin Rombach and Patrick Esser. This model is designed to generate and modify images based on text prompts, utilizing a Latent Diffusion Model with a fixed, pretrained text encoder (OpenCLIP-ViT/H). The model was initially fine-tuned from the Stable Diffusion v2 model and then further trained for an additional 55k steps on the same dataset (with punsafe=0.1), and then fine-tuned for another 155k extra steps with punsafe=0.98.. <a href='https://stability.ai/blog/stablediffusion2-1-release7-dec-2022' target='_blank'>Learn More</a>.
+Stable Diffusion v2-1 is an advanced version of the Stable Diffusion v2 model, developed by Robin Rombach and Patrick Esser. This model is designed to generate and modify images based on text prompts, utilizing a Latent Diffusion Model with a fixed, pretrained text encoder (OpenCLIP-ViT/H). The model was initially fine-tuned from the Stable Diffusion v2 model and then further trained for an additional 55k steps on the same dataset (with punsafe=0.1), and then fine-tuned for another 155k extra steps with punsafe=0.98. <a href='https://stability.ai/blog/stablediffusion2-1-release7-dec-2022' target='_blank'>Learn More</a>.
+
+## 💻 Hardware Requirements
+
+To run the `stable-diffusion-2-1` service on Prem, you'll need access to a GPU with at least 16GiB of RAM.
 
 ## 📒 Example Usage
 
@@ -22,24 +26,35 @@ Stable Diffusion v2-1 is an advanced version of the Stable Diffusion v2 model, d
 
 ## 🛠️ Technical Details
 
-### 🚀 Serving Details
+### 🚀 Getting Started with OpenAI Python client
 
 The service exposes the same endpoints as OpenAI DALL-E does. You can directly use the official `openai` python library.
 
 ```python
 
 !pip install openai
+!pip install pillow
 
-import os
+import io
+import base64
 import openai
 
+from PIL import Image
+
+openai.api_base = "http://localhost:9111/v1"
 openai.api_key = "random-string"
 
-openai.Image.create(
-  prompt="A cute baby sea otter",
-  n=1,
-  size="512x512"
+response = openai.Image.create(
+    prompt="Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart",
+    n=1,
+    size="512x512"
 )
+
+image_string = response["data"][0]["b64_json"]
+
+img = Image.open(io.BytesIO(base64.decodebytes(bytes(image_string, "utf-8"))))
+img.save("iron_man.jpeg")
+
 ```
 
 ## 📜 License

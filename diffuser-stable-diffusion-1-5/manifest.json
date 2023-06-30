@@ -6,7 +6,8 @@
     "beta": true,
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": 3072
+        "memoryRequirements": 16384,
+        "secondsPerImage": 8
     },
     "interfaces": [
         "diffuser"
