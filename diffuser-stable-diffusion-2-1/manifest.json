@@ -6,7 +6,7 @@
     "beta": true,
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": 16384,
+        "memoryRequirements": 14705,
         "secondsPerImage": 8
     },
     "interfaces": [
