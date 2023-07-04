@@ -2,21 +2,21 @@
 
 ## 📌 Description
 
-Redis, short for Remote Dictionary Server, serves as a multifunctional in-memory data structure store. It functions as a distributed key-value database, cache, and message broker, all operating in-memory for high-speed data access. With optional durability, Redis ensures data persistence despite potential system failures. <a href='https://redis.com/solutions/use-cases/vector-database/' target='_blank'>Learn more</a> 🚀.
+<a href='https://weaviate.io/' target='_blank'>Weaviate</a> is an open-source, cloud-native vector database designed to enable machine learning (ML) and artificial intelligence (AI) capabilities for your data. It's built to handle large-scale data storage and search operations, making it a powerful tool for data scientists and developers working with big data <a href='https://weaviate.io/developers/weaviate' target='_blank'>Learn more</a> 🚀.
 
 ## 👇 Getting Started (Implementation)
 
-The service can be used with Langchain. You can check the <a href='https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/redis.html' target='_blank'>official documentation</a>. In the code snippet below, weassume that you are using <a href='https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2' target='_blank'>`all-miniLM-l6-v2`</a> model for embeddings generation and the service is running locally on port 8001.
+The service can be used with Langchain or the official weavaite python client (https://github.com/qdrant/qdrant). Below you can find an example using the service with Langchain. In the code snippet, we are assuming that you are using all-miniLM-l6-v2 model for embeddings generation and the service is running locally on port 8001.
 
 ```python
 
-!pip install redis
+!pip install weaviate-client
 
 import os
 
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
-from langchain.vectorstores.redis import Redis
+from langchain.vectorstores import Weaviate
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
@@ -52,10 +52,15 @@ Make payments with Bitcoin and Cryptocurrency. It's a permissionless infrastruct
 # Using sentence transformers all-MiniLM-L6-v2
 embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/v1")
 
-# Using locally running Redis
-url = "redis://localhost:6379"
+# Using locally running Weaviate
+url = "http://localhost:8080"
 
-vectorstore = Redis.from_documents([doc1, doc2, doc3], embeddings, redis_url=url,  index_name="prem_index_test")
+vectorstore = Weaviate.from_documents(
+    [doc1, doc2, doc3], 
+    embeddings, 
+    weaviate_url=url, 
+    by_text=False,
+)
 
 query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)

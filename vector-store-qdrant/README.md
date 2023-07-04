@@ -1,10 +1,8 @@
-# 📑Documentation
+# 📑 Documentation
 
 ## 📌 Description
 
 <a href='https://qdrant.tech/' target='_blank'>Qdrant</a> is a vector similarity search engine designed for storing, searching, and managing points along with their respective payloads. Built with an emphasis on extensive filtering, it is particularly beneficial for neural network matching, semantic-based matching, and faceted search. Qdrant offers various deployment options including local mode, on-premise server deployment, and Qdrant Cloud, each catering to different use-case scenarios. <a href='https://qdrant.tech/documentation' target='_blank'>Learn more</a> 🚀.
-
-<a href='https://qdrant.tech/documentation' target='_blank'>Learn more</a> 🚀.
 
 ## 👇 Getting Started (Implementation)
 
@@ -16,11 +14,9 @@ The service can be used with Langchain or the official qdrant python client (htt
 
 import os
 
-from langchain.chains import LLMChain
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
 from langchain.vectorstores import Qdrant
-from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
@@ -54,7 +50,7 @@ Make payments with Bitcoin and Cryptocurrency. It's a permissionless infrastruct
 """)
 
 # Using sentence transformers all-MiniLM-L6-v2
-embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8001/v1")
+embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/v1")
 
 # Using locally running Qdrant
 url = "http://localhost:6333"
@@ -70,9 +66,3 @@ query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
-## 👀 Intended Usage
-The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
-
-By default, input text longer than 256-word pieces is truncated.
-
-<a href='https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/qdrant' target='_blank'>Learn more</a> 🚀.
