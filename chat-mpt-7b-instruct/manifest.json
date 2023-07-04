@@ -1,0 +1,23 @@
+{
+    "id": "mpt-7b-instruct",
+    "name": "MPT 7B Instruct",
+    "beta": true,
+    "description": "MPT-7B-Instruct is a model for short-form instruction following. It's built by finetuning MPT-7B on a dataset derived from the Databricks Dolly-15k and the Anthropic Helpful and Harmless (HH-RLHF) datasets. Its inference can be run on various GPU configurations. It's released under cc-by-sa-3.0 which enables commercial usage with proper credits.",
+    "documentation": "",
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 13455,
+        "tokensPerSecond": 40
+    },
+    "interfaces": [
+        "chat"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 33040731339,
+            "image": "ghcr.io/premai-io/mpt-7b-instruct-gpu:1.0.0"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 8452
+}
