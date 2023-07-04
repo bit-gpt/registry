@@ -1,0 +1,27 @@
+{
+    "id": "weaviate",
+    "name": "Weaviate",
+    "description": "Weaviate is an open-source, cloud-native vector database designed to enable machine learning (ML) and artificial intelligence (AI) capabilities for your data. It's built to handle large-scale data storage and search operations, making it a powerful tool for data scientists and developers working with big data [Learn More](https://weaviate.io/developers/weaviate)",
+    "documentation": "",
+    "interfaces": [
+        "vector-store"
+    ],
+    "icon": "",
+    "modelInfo": {},
+    "envVariables": [
+        "QUERY_DEFAULTS_LIMIT=25",
+        "AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true",
+        "PERSISTENCE_DATA_PATH=/var/lib/weaviate",
+        "DEFAULT_VECTORIZER_MODULE=none",
+        "CLUSTER_HOSTNAME=node1"
+    ],
+    "volumePath": "/var/lib/weaviate",
+    "dockerImages": {
+        "cpu": {
+            "size": 46718418,
+            "image": "semitechnologies/weaviate:1.19.11"
+        }
+    },
+    "defaultPort": 8080,
+    "defaultExternalPort": 8080
+}
