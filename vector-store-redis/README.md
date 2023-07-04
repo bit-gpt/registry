@@ -14,11 +14,9 @@ The service can be used with Langchain. You can check the <a href='https://pytho
 
 import os
 
-from langchain.chains import LLMChain
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
 from langchain.vectorstores.redis import Redis
-from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
@@ -52,21 +50,14 @@ Make payments with Bitcoin and Cryptocurrency. It's a permissionless infrastruct
 """)
 
 # Using sentence transformers all-MiniLM-L6-v2
-embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8001/v1")
+embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/v1")
 
 # Using locally running Redis
 url = "redis://localhost:6379"
 
-rds = Redis.from_documents(docs, embeddings, redis_url=url,  index_name="prem_index_test")
+vectorstore = Redis.from_documents([doc1, doc2, doc3], embeddings, redis_url=url,  index_name="prem_index_test")
 
 query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
-
-## 👀 Intended Usage
-The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
-
-By default, input text longer than 256-word pieces is truncated.
-
-<a href='https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/redis' target='_blank'>Learn more</a> 🚀.

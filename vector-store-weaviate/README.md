@@ -1,4 +1,4 @@
-# 📑Documentation
+# 📑 Documentation
 
 ## 📌 Description
 
@@ -14,11 +14,9 @@ The service can be used with Langchain or the official weavaite python client (h
 
 import os
 
-from langchain.chains import LLMChain
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
 from langchain.vectorstores import Weaviate
-from langchain.prompts import PromptTemplate
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
@@ -52,7 +50,7 @@ Make payments with Bitcoin and Cryptocurrency. It's a permissionless infrastruct
 """)
 
 # Using sentence transformers all-MiniLM-L6-v2
-embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8001/v1")
+embeddings = OpenAIEmbeddings(openai_api_base="http://localhost:8444/v1")
 
 # Using locally running Weaviate
 url = "http://localhost:8080"
@@ -68,10 +66,3 @@ query = "What are Prem Benefits?"
 docs = vectorstore.similarity_search(query)
 print(docs[0].page_content)
 ```
-## 👀 Intended Usage
-
-The model is meant to be used as an encoder for single sentences and short paragraphs. Given an input text, it outputs a vector that captures the semantic information. You can use the sentence vector generated for information retrieval, clustering, or sentence similarity tasks.
-
-By default, input text longer than 256-word pieces is truncated.
-
-<a href='https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/qdrant' target='_blank'>Learn more</a> 🚀.
