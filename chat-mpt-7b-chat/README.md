@@ -6,19 +6,28 @@ MPT-7B-Chat is a chatbot-like model for dialogue generation. It was built by fin
 
 
 ## 💻 Hardware Requirements
-To run the `mpt-7b-chat` service on Prem, you'll need access to a GPU:
-
-You'd need an A100, A10, or V100.
-
-### A100 GPUs
-A100 GPUs are preferred for training all model sizes.
-
-### A10 GPUs
-
-### V100 GPUs
-It can be ran on V100 GPUs.
-
 > **Memory requirements**: 13.91 GB (13269 MiB).
+
+To run the `mpt-7b-chat` service, you'll need the following hardware configuration:
+
+### Cloud Platforms
+
+If you are using AWS:
+
+- Instance Type: `p3.2xlarge` or higher
+- GPU: NVIDIA V100 or higher.
+
+If you are using Paperspace:
+
+- Instance Type: `V100` or higher
+- GPU: NVIDIA V100 or higher.
+
+### On-Premise Platforms
+
+You'll need access to a GPU with the following options:
+
+- V100 GPUs: The model can be run on V100 GPUs.
+
 
 
 ## 📒 Example Usage
