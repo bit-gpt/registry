@@ -5,20 +5,30 @@
 `dolly-v2-12b`, developed by Databricks, is an instruction-following large language model trained on diverse capability domains. It exhibits remarkable instruction following behavior, surpassing the foundation model it's based on, Pythia-12b. The model is particularly designed for commercial use and its inference can be run on various GPU configurations. <a href='https://huggingface.co/databricks/dolly-v2-12b' target='_blank'>Learn More</a>
 
 ## 💻 Hardware Requirements
-To run the `dolly-v2-12b` service on Prem, you'll need access to a GPU:
-
-You'd need an A100, A10, or V100. 
-
-### A100 GPUs
-A100 GPUs are preferred for training all model sizes, and are the only GPUs that can train the 12B param model in a reasonable amount of time.
-
-### A10 GPUs
-Training the 12B param model is not recommended on A10s.
-
-### V100 GPUs
-When using V100s (ex: `p3.2xlarge`, 1 x V100 16GB, `NC6s_v3`), in all cases, set `torch_dtype=torch.float16` in `pipeline()` instead. The 12B param model may not function well in 8-bit
 
 > **Memory requirements**: 24.5 GB (24576 bytes).
+
+To run the `dolly-v2-12b` service, you'll need the following hardware configuration:
+
+### Cloud Platforms
+
+If you are using AWS:
+
+- Instance Type: `p3.2xlarge` or higher
+- GPU: NVIDIA A100, NVIDIA V100
+  - When using V100s (e.g., `p3.2xlarge`, 1 x V100 16GB)  set `torch_dtype=torch.float16` in `pipeline()` instead. The 12B param model may not function well in 8-bit.
+
+If you are using Paperspace:
+
+- Instance Type: `V100-32G` or `A100` or higher
+- GPU: NVIDIA A100, NVIDIA V100
+
+### On-Premise Platforms
+
+You'll need access to a GPU with the following options:
+- A100 GPUs: A100 GPUs are preferred for training all model sizes, and are the only GPUs that can train the 12B param model in a reasonable amount of time.
+- A10 GPUs: Training the 12B param model is not recommended on A10s.
+- V100 GPUs: When using V100s (e.g., `p3.2xlarge`, 1 x V100 16GB, `NC6s_v3`), in all cases, set `torch_dtype=torch.float16` in `pipeline()` instead. The 12B param model may not function well in 8-bit.
 
 
 ## 📒 Example Usage
