@@ -5,19 +5,28 @@
 XGen-7B Instruct with 8k Context length is a 7B parameters model released by Salesforce, supervised fine tuned on public domain instructional data including databricks-dolly-15k, oasst1, Baize and GPT-related datasets. <a href='https://huggingface.co/Salesforce/xgen-7b-8k-inst' target='_blank'>Learn More</a> and <a href='https://blog.salesforceairesearch.com/xgen/#note-on-potential-risks' target='_blank'>Blog here</a>.
 
 ## 💻 Hardware Requirements
-To run the `xgen-7b-8k-inst` service on Prem, you'll need access to a GPU:
-
-You'd need an A100, A10, or V100.
-
-### A100 GPUs
-A100 GPUs are preferred for training all model sizes.
-
-### A10 GPUs
-
-### V100 GPUs
-It can be ran on V100 GPUs.
 
 > **Memory requirements**: 15.79 GB (15065 MiB).
+
+To run the `xgen-7b-8k-inst` service, you'll need the following hardware configuration:
+
+#### Cloud Platforms
+
+If you are using AWS:
+
+- Instance Type: `p3.2xlarge` or higher
+- GPU: NVIDIA V100 or higher.
+
+If you are using Paperspace:
+
+- Instance Type: `V100` or higher
+- GPU: NVIDIA V100 or higher.
+
+#### On-Premise Platforms
+
+You'll need access to a GPU with the following options:
+
+- V100 GPUs: The model can be run on V100 GPUs.
 
 
 ## 📒 Example Usage
