@@ -5,19 +5,28 @@
 Falcon-7B-Instruct is a 7B parameters causal decoder-only model built by TII based on Falcon-7B and finetuned on a mixture of chat/instruct datasets. The model is particularly designed for commercial use and its inference can be run on various GPU configurations. <a href='https://huggingface.co/tiiuae/falcon-7b-instruct' target='_blank'>Learn More</a>
 
 ## 💻 Hardware Requirements
-To run the `falcon-7b-instruct` service on Prem, you'll need access to a GPU:
-
-You'd need an A100, A10, or V100.
-
-### A100 GPUs
-A100 GPUs are preferred for training all model sizes.
-
-### A10 GPUs
-
-### V100 GPUs
 
 > **Memory requirements**: 15.81 GB (15085 MiB).
 
+To run the `falcon-7b-instruct` service, you'll need the following hardware configuration:
+
+### Cloud Platforms
+
+If you are using AWS:
+
+- Instance Type: `p3.2xlarge` or higher
+- GPU: NVIDIA A100, NVIDIA V100
+
+If you are using Paperspace:
+
+- Instance Type: `V100` or higher
+- GPU: NVIDIA A100, NVIDIA V100
+
+### On-Premise Platforms
+
+You'll need access to a GPU with the following options:
+- A100 GPUs: A100 GPUs are preferred for training all model sizes.
+- V100 GPUs: The model can be run on V100 GPUs.
 
 ## 📒 Example Usage
 
