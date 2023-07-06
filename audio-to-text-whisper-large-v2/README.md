@@ -12,7 +12,7 @@ To run the `whisper-large-v2` service on Prem, you'll just need a GPU with at le
 
 Whisper Tiny can be used for various tasks, including English to English transcription, French to French transcription, and French to English translation. It can also handle long-form transcription by using a chunking algorithm, allowing it to transcribe audio samples of arbitrary length.
 
-### 🎶 sample.wav. You can find the file [here](https://raw.githubusercontent.com/premAI-io/prem-registry/main/audio-to-text-whisper-tiny/sample.wav)
+### 🎶 sample.wav. You can find the file [here](https://github.com/premAI-io/prem-registry/blob/main/audio-to-text-whisper-tiny/sample.wav)
 
 ## 🛠️ Technical Details
 
