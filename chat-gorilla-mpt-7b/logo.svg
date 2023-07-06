@@ -1,0 +1,24 @@
+<svg width="215" height="256" viewBox="0 0 215 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M71.7188 253.715L125.894 48.459H126.657C154.126 56.0893 170.15 83.5585 163.283 111.028L135.051 217.852C127.42 245.322 99.188 261.345 71.7188 253.715Z" fill="url(#paint0_linear_4083_3567)"/>
+<path d="M196.054 256.001C167.822 248.37 151.798 220.138 159.428 192.669L175.452 133.152H176.215C203.684 140.783 219.708 168.252 212.841 195.721L196.054 256.001Z" fill="url(#paint1_linear_4083_3567)"/>
+<path d="M0 253.714L39.6777 103.396H40.4407C67.9099 111.027 83.9337 138.496 77.0664 165.965L63.3317 217.088C55.7014 245.321 27.4692 261.344 0 253.714Z" fill="url(#paint2_linear_4083_3567)"/>
+<path d="M109.877 28.6167C109.114 19.4603 96.9053 1.91055 89.2749 0.384484C81.6446 -1.90462 76.3034 6.48875 70.1991 13.3561C64.0948 20.9864 61.0427 24.0385 57.2276 26.3276C53.4124 28.6167 48.8342 31.6689 47.3081 36.2471C46.5451 40.0622 51.8863 42.3513 50.3602 49.2186C48.0711 57.612 36.6256 53.7968 32.8104 67.5314C30.5213 75.9248 46.5451 91.9485 72.4882 98.8158C83.9337 101.868 96.9053 92.7115 100.72 78.9769C103.773 65.2423 111.403 40.0622 109.877 28.6167Z" fill="url(#paint3_linear_4083_3567)"/>
+<defs>
+<linearGradient id="paint0_linear_4083_3567" x1="12.386" y1="128.616" x2="214.424" y2="181.707" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D66C6"/>
+<stop offset="1" stop-color="#6011C5"/>
+</linearGradient>
+<linearGradient id="paint1_linear_4083_3567" x1="7.3039" y1="147.741" x2="209.354" y2="200.834" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D66C6"/>
+<stop offset="1" stop-color="#6011C5"/>
+</linearGradient>
+<linearGradient id="paint2_linear_4083_3567" x1="0.563882" y1="173.642" x2="202.603" y2="226.733" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D66C6"/>
+<stop offset="1" stop-color="#6011C5"/>
+</linearGradient>
+<linearGradient id="paint3_linear_4083_3567" x1="36.1792" y1="38.1089" x2="238.206" y2="91.1961" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0D66C6"/>
+<stop offset="1" stop-color="#6011C5"/>
+</linearGradient>
+</defs>
+</svg>
