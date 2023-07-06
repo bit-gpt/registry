@@ -12,8 +12,7 @@
         "tokensPerSecond": 6
     },
     "interfaces": [
-        "chat",
-        "embeddings"
+        "chat"
     ],
     "dockerImages": {
         "cpu": {
