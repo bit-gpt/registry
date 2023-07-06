@@ -1,0 +1,23 @@
+{
+    "id": "gorilla-falcon-7b",
+    "name": "Gorilla Falcon 7B",
+    "beta": true,
+    "description": "Gorilla Falcon 7B is an open-source API caller trained by fine-tuning Falcon weights. The model is particularly designed for commercial use (License: Apache-2.0) and its inference can be run on various GPU configurations.",
+    "documentation": "",
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": "TODO",
+        "tokensPerSecond": "TODO"
+    },
+    "interfaces": [
+        "chat"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 31291457778,
+            "image": "ghcr.io/premai-io/chat-gorilla-falcon-7b-gpu:1.0.0"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 8756
+}
