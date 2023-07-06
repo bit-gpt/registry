@@ -126,7 +126,7 @@ Our targeted evaluation on long sequence modeling benchmarks show benefits of ou
 
 XGen-7B achieves equally strong results both in text (e.g., MMLU, QA) and code (HumanEval) tasks.
 
-We have tested both xgen-7b-8k-inst and xgen-7b-8k-base models on similar set of questions and in results we found xgen-7b-8k-inst model to be more accurate in generating better responses. Results can be found [here](https://github.com/premAI-io/prem-registry/tree/dev/chat-xgen-7b-8k-inst/results).
+We have tested both xgen-7b-8k-inst and xgen-7b-8k-base models on similar set of questions and in results we found xgen-7b-8k-inst model to be more accurate in generating better responses. Results can be found [here](https://github.com/premAI-io/prem-registry/tree/main/chat-xgen-7b-8k-inst/results).
 
 ### 🚫 Limitations and Biases
 
