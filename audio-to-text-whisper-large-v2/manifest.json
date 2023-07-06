@@ -3,7 +3,7 @@
     "name": "Whisper Large v2",
     "description": "",
     "documentation": "",
-    "comingSoon": true,
+    "beta": true,
     "icon": "",
     "modelInfo": {},
     "interfaces": [
@@ -12,7 +12,7 @@
     "dockerImages": {
         "gpu": {
             "size": 23723729305,
-            "image": "ghcr.io/premai-io/audio-to-text-whisper-large-v2-gpu:0.0.2"
+            "image": "ghcr.io/premai-io/audio-to-text-whisper-large-v2-gpu:1.0.1"
         }
     },
     "defaultPort": 8000,
