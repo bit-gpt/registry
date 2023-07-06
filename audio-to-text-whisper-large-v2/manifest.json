@@ -3,7 +3,7 @@
     "name": "Whisper Large v2",
     "description": "",
     "documentation": "",
-    "comingSoon": true,
+    "beta": true,
     "icon": "",
     "modelInfo": {},
     "interfaces": [
