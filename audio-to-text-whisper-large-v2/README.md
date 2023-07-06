@@ -14,6 +14,8 @@ Whisper Tiny can be used for various tasks, including English to English transcr
 
 ### 🎶 sample.wav. You can find the file [here](https://github.com/premAI-io/prem-registry/blob/main/audio-to-text-whisper-tiny/sample.wav)
 
+<img width="1449" alt="image" src="https://github.com/premAI-io/prem-registry/assets/29598954/8fe4ee74-e941-42ae-b3e8-5efd30581729">
+
 ## 🛠️ Technical Details
 
 ### 🚀 Getting Started with OpenAI Python client
