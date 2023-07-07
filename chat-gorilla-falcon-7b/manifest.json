@@ -7,7 +7,7 @@
     "icon": "",
     "modelInfo": {
         "memoryRequirements": 10874,
-        "tokensPerSecond": "TODO"
+        "tokensPerSecond": 22
     },
     "interfaces": [
         "chat"
