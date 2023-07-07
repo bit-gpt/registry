@@ -6,7 +6,7 @@
     "documentation": "",
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": "TODO",
+        "memoryRequirements": 10874,
         "tokensPerSecond": "TODO"
     },
     "interfaces": [
@@ -14,7 +14,7 @@
     ],
     "dockerImages": {
         "gpu": {
-            "size": 31291457778,
+            "size": 31291459579,
             "image": "ghcr.io/premai-io/chat-gorilla-falcon-7b-gpu:1.0.0"
         }
     },

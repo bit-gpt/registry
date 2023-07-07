@@ -6,7 +6,7 @@
     "documentation": "",
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": "TODO",
+        "memoryRequirements": 10609,
         "tokensPerSecond": "TODO"
     },
     "interfaces": [
@@ -14,7 +14,7 @@
     ],
     "dockerImages": {
         "gpu": {
-            "size": "TODO",
+            "size": 31298452183,
             "image": "ghcr.io/premai-io/chat-gorilla-mpt-7b-gpu:1.0.0"
         }
     },
