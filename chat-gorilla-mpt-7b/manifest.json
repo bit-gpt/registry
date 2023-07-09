@@ -2,7 +2,7 @@
     "id": "gorilla-mpt-7b",
     "name": "Gorilla MPT 7B",
     "beta": true,
-    "description": "Gorilla mpt 7B is an open-source API caller trained by fine-tuning MPT weights. The model is particularly designed for commercial use (License: Apache-2.0) and its inference can be run on various GPU configurations.",
+    "description": "Gorilla mpt 7B is an open-source API caller trained by fine-tuning MPT weights. The model is particularly designed for commercial use (License: Apache-2.0)",
     "documentation": "",
     "icon": "",
     "modelInfo": {

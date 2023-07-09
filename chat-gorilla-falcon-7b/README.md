@@ -7,7 +7,7 @@ Gorilla Falcon 7B is an open-source API caller trained by fine-tuning Falcon wei
 
 ## 💻 Hardware Requirements
 
-> **Memory requirements**: 10.6 GB (10874 MiB).
+**Memory requirements**: 10.6 GB (10874 MiB).
 
 
 To run the `gorilla-falcon-7b` service, you'll need the following hardware configuration:
@@ -29,40 +29,43 @@ If you are using Paperspace:
 ## 📒 Example Usage
 
 ### 1️⃣ Prompt: Translate a text from English to French
-> <<<domain>>>: Natural Language Processing Text2Text Generation
-> 
-> <<<api_call>>>: T5ForConditionalGeneration.from_pretrained('google/byt5-small')
-> 
-> <<<api_provider>>>: Hugging Face Transformers
-> 
-> 1. Import the necessary classes from the transformers package, which includes T5Tokenizer and T5ForConditionalGeneration.
-> 2. Load the pre-trained model 'google/byt5-small' using T5ForConditionalGeneration.from_pretrained() method. This model is specifically designed for text-to-text generation tasks.
-> 3. Load the tokenizer associated with the model using T5Tokenizer.from_pretrained('google/byt5-small') method.
-> 4. Prepare the input text by adding the prefix 'translate English to French:'before the text you want to translate.
-> 5. Tokenize the input text using the tokenizer and generate the output text using the model.
-> 6. Decode the output tokens to obtain the translated French text.
+
+\<\<\<domain\>\>\>: Natural Language Processing Text2Text Generation
+
+\<\<\<api_call\>\>\>: T5ForConditionalGeneration.from_pretrained('google/byt5-small')
+
+\<\<\<api_provider\>\>\>: Hugging Face Transformers
+
+1. Import the necessary classes from the transformers package, which includes T5Tokenizer and T5ForConditionalGeneration.
+2. Load the pre-trained model 'google/byt5-small' using T5ForConditionalGeneration.from_pretrained() method. This model is specifically designed for text-to-text generation tasks.
+3. Load the tokenizer associated with the model using T5Tokenizer.from_pretrained('google/byt5-small') method.
+4. Prepare the input text by adding the prefix 'translate English to French:'before the text you want to translate.
+5. Tokenize the input text using the tokenizer and generate the output text using the model.
+6. Decode the output tokens to obtain the translated French text.
 
 ### 2️⃣ Prompt: Generate an image from a prompt
-> <<<domain>>>: Multimodal Text-to-Image
-> 
-> <<<api_call>>>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4')
-> 
-> <<<api_provider>>>: Hugging Face
-> 1. Import the StableDiffusionPipeline class from the diffusers package and Image class from PIL.
-> 2. Load the pretrained StableDiffusionPipeline model with the identifier 'CompVis/stable-diffusion-v1-4'.
-> 3. Provide the text prompt describing the image you want to generate. For example, 'a beautiful landscape with a mountain range and a river'.
-> 4. Use the pipeline to generate an image based on the provided prompt. The generated image will be stored in the variable 'image'. You can then save the image to a file if needed.
+
+\<\<\<domain\>\>\>: Multimodal Text-to-Image
+
+\<\<\<api_call\>\>\>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4')
+
+\<\<\<api_provider\>\>\>: Hugging Face
+1. Import the StableDiffusionPipeline class from the diffusers package and Image class from PIL.
+2. Load the pretrained StableDiffusionPipeline model with the identifier 'CompVis/stable-diffusion-v1-4'.
+3. Provide the text prompt describing the image you want to generate. For example, 'a beautiful landscape with a mountain range and a river'.
+4. Use the pipeline to generate an image based on the provided prompt. The generated image will be stored in the variable 'image'. You can then save the image to a file if needed.
 
 ### 3️⃣ Prompt: Upscale an image
-> <<<domain>>>: Computer Vision Image-to-Image
-> 
-> <<<api_call>>>: pipeline('image-super-resolution', model='caidas/swin2SR-classical-sr-x4-64')
-> 
-> <<<api_provider>>>: Hugging Face Transformers
-> 1. Import the necessary libraries, which include the 'pipeline' function from transformers and the 'Image' class from PIL.
-> 2. Use the 'pipeline' function to create an instance of the 'image-super-resolution' model with the pre-trained 'caidas/ swin2SR-classical-sr-x4-64' model. This model is designed to upscale images by a factor of 4.
-> 3. Load the input image into the 'Image' class and pass it to the model for upscaling.
-> 4. The upscaled image will be saved in the same file with the prefix 'upscaled_'.
+
+\<\<\<domain\>\>\>: Computer Vision Image-to-Image
+
+\<\<\<api_call\>\>\>: pipeline('image-super-resolution', model='caidas/swin2SR-classical-sr-x4-64')
+
+\<\<\<api_provider\>\>\>: Hugging Face Transformers
+1. Import the necessary libraries, which include the 'pipeline' function from transformers and the 'Image' class from PIL.
+2. Use the 'pipeline' function to create an instance of the 'image-super-resolution' model with the pre-trained 'caidas/ swin2SR-classical-sr-x4-64' model. This model is designed to upscale images by a factor of 4.
+3. Load the input image into the 'Image' class and pass it to the model for upscaling.
+4. The upscaled image will be saved in the same file with the prefix 'upscaled_'.
 
 
 ### 4️⃣ Prompt: Our customer is a zoo and we want to help them detect movement of different animals. Write a python program in 1 to 2 lines to call API in TensorFlowHub.
@@ -101,10 +104,10 @@ messages = [HumanMessage(content="Generate an image from a text")]
 print(chat(messages))
 
 # output:
-# <<<domain>>>: Multimodal Text-to-Image Generation
-# <<<api_call>>>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
-# <<<api_provider>>>: Hugging Face
-# <<<explanation>>>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
+# \<\<\<domain\>\>\>: Multimodal Text-to-Image Generation
+# \<\<\<api_call\>\>\>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
+# \<\<\<api_provider\>\>\>: Hugging Face
+# \<\<\<explanation\>\>\>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
 # 2. Load the 'CompVis/stable-diffusion-v1-4' model and the'stabilityai/sd-vae-ft-mse' VAE model. The VAE model will be used for text encoding.
 # 3. Create a StableDiffusionPipeline instance by calling the from_pretrained method with the model and VAE as arguments.
 # 4. Provide a text prompt describing the desired image, and use the pipeline to generate an image based on the text prompt. Save the generated image to a file.
@@ -136,11 +139,11 @@ chat = ChatOpenAI(openai_api_base="http://localhost:8000/v1")
 chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
 print(chain.run(user_message=user_message))
 
-# output: > Finished chain.
-# <<<domain>>>: Multimodal Text-to-Image Generation
-# <<<api_call>>>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
-# <<<api_provider>>>: Hugging Face
-# <<<explanation>>>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
+# output: Finished chain.
+# \<\<\<domain\>\>\>: Multimodal Text-to-Image Generation
+# \<\<\<api_call\>\>\>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
+# \<\<\<api_provider\>\>\>: Hugging Face
+# \<\<\<explanation\>\>\>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
 # 2. Load the 'CompVis/stable-diffusion-v1-4' model and the'stabilityai/sd-vae-ft-mse' VAE model. The VAE model will be used for text encoding.
 # 3. Create a StableDiffusionPipeline instance by calling the from_pretrained method with the model and VAE as arguments.
 # 4. Provide a text prompt describing the desired image, and use the pipeline to generate an image based on the text prompt. Save the generated image to a file.
@@ -149,7 +152,7 @@ print(chain.run(user_message=user_message))
 
 ### 🚫 Limitations and Biases
 
-We have noticed that the model sometimes generates responses with reference to some random unexisting model name on Huggingface. 
+We have noticed that the model sometimes generates responses with reference to some random unexisting model name on Huggingface. Furthermore also the structure  of the output is not always the same (refer to above prompt examples). 
 We recommend users of Gorilla models to develop guardrails and to take appropriate precautions for any production use.
 
 The creators of Gorilla Falcon 7B have mentioned that despite their effort in addressing the risks of hallucinations like other LLMs, Gorilla models are not free from such limitations. We hope our open-sourced codebase will help other researchers better understand these challenges and improve on these key limitations for making AI beneficial for everyone.
