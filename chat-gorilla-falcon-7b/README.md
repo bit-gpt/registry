@@ -16,12 +16,12 @@ To run the `gorilla-falcon-7b` service, you'll need the following hardware confi
 
 If you are using AWS:
 
-- Instance Type: #TODO
-- GPU: #TODO
+- Instance Type: `p3.2xlarge` or higher
+- GPU: NVIDIA V100 or higher.
 
 If you are using Paperspace:
 
-- Instance Type: `V100` or higher
+- Instance Type: `V100-32G` or higher
 - GPU: NVIDIA V100 or higher.
 
 ### On-Premise Platforms
@@ -96,7 +96,7 @@ from langchain.chat_models import ChatOpenAI
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8000/v1", max_tokens=1024)
+chat = ChatOpenAI(openai_api_base="http://localhost:8000/v1")
 messages = [HumanMessage(content="Generate an image from a text")]
 print(chat(messages))
 
@@ -132,7 +132,7 @@ prompt = PromptTemplate(
 
 user_message = "Generate an image from a text"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8000/v1", max_tokens=1024)
+chat = ChatOpenAI(openai_api_base="http://localhost:8000/v1")
 chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
 print(chain.run(user_message=user_message))
 
@@ -147,9 +147,13 @@ print(chain.run(user_message=user_message))
 
 ```
 
-### 🔎 Quality Benchmarks
-
 ### 🚫 Limitations and Biases
+
+We have noticed that the model sometimes generates responses with reference to some random unexisting model name on Huggingface. 
+We recommend users of Gorilla models to develop guardrails and to take appropriate precautions for any production use.
+
+The creators of Gorilla Falcon 7B have mentioned that despite their effort in addressing the risks of hallucinations like other LLMs, Gorilla models are not free from such limitations. We hope our open-sourced codebase will help other researchers better understand these challenges and improve on these key limitations for making AI beneficial for everyone.
+
 
 ## 📜 License
 It is made available under a permissive Apache 2.0 license allowing for commercial use, without any royalties or restrictions.
