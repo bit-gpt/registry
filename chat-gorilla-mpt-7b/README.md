@@ -146,10 +146,10 @@ messages = [HumanMessage(content="Generate an image from a text")]
 print(chat(messages))
 
 # output:
-# \<\<\<domain\>\>\>: Multimodal Text-to-Image Generation
-# \<\<\<api_call\>\>\>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
-# \<\<\<api_provider\>\>\>: Hugging Face
-# \<\<\<explanation\>\>\>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
+# <<<domain>>>: Multimodal Text-to-Image Generation
+# <<<api_call>>>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
+# <<<api_provider>>>: Hugging Face
+# <<<explanation>>>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
 # 2. Load the 'CompVis/stable-diffusion-v1-4' model and the'stabilityai/sd-vae-ft-mse' VAE model. The VAE model will be used for text encoding.
 # 3. Create a StableDiffusionPipeline instance by calling the from_pretrained method with the model and VAE as arguments.
 # 4. Provide a text prompt describing the desired image, and use the pipeline to generate an image based on the text prompt. Save the generated image to a file.
@@ -182,10 +182,10 @@ chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
 print(chain.run(user_message=user_message))
 
 # output: \> Finished chain.
-# \<\<\<domain\>\>\>: Multimodal Text-to-Image Generation
-# \<\<\<api_call\>\>\>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
-# \<\<\<api_provider\>\>\>: Hugging Face
-# \<\<\<explanation\>\>\>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
+# <<<domain>>>: Multimodal Text-to-Image Generation
+# <<<api_call>>>: StableDiffusionPipeline.from_pretrained('CompVis/stable-diffusion-v1-4', vae='AutoencoderKL.from_pretrained(stabilityai/sd-vae-ft-mse)')
+# <<<api_provider>>>: Hugging Face
+# <<<explanation>>>:1. Import the necessary libraries: AutoencoderKL from diffusers.models and StableDiffusionPipeline from diffusers.
 # 2. Load the 'CompVis/stable-diffusion-v1-4' model and the'stabilityai/sd-vae-ft-mse' VAE model. The VAE model will be used for text encoding.
 # 3. Create a StableDiffusionPipeline instance by calling the from_pretrained method with the model and VAE as arguments.
 # 4. Provide a text prompt describing the desired image, and use the pipeline to generate an image based on the text prompt. Save the generated image to a file.
