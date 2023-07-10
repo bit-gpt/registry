@@ -14,11 +14,10 @@ Learn more about <a href='https://github.com/pgvector/pgvector' target='_blank'>
 The service can be used with Langchain. You can check the [langchain pgvector documentation](https://python.langchain.com/docs/modules/data_connection/vectorstores/integrations/pgvector) for detailed usage instructions. In the code snippet below, we assume that you have installed the required dependencies present in *Pre-requisites* step and are using `all-miniLM-l6-v2` model for embeddings generation and the service is running locally on port `8444`.
 
 
-
 ### Pre-requisites
-> ⚠️ Currently there's a bug in the latest version of langchain. Hence to use the pgvector integration on non-openai embeddings, you need to install the version mentioned below. The issue can be tracked [here](https://github.com/hwchase17/langchain/issues/2219)
+
 ```bash
-pip install pgvector tiktoken psycopg2-binary openai git+https://github.com/hwchase17/langchain.git@71d73a5f00dfd4e33a565762b7032d6b445d9bf6
+pip install pgvector tiktoken psycopg2-binary openai langchain
 ```
 
 ```python
