@@ -1,0 +1,30 @@
+{
+    "id": "pgvector",
+    "name": "PGVector",
+    "description": "It is a combination of PostgreSQL, an open-source relational database, and PGVector, an extension that enables vector-based operations and similarity searches. PGVector allows you to store and query vector embeddings efficiently within the PostgreSQL database.",
+    "documentation": "",
+    "interfaces": [
+        "vector-store"
+    ],
+    "icon": "",
+    "modelInfo": {},
+    "envVariables": [
+        "POSTGRES_HOST=localhost",
+        "POSTGRES_PORT=5432",
+        "POSTGRES_DATABASE=postgres",
+        "POSTGRES_USER=postgres",
+        "POSTGRES_PASSWORD=postgres"
+    ],
+    "execCommands": [
+        "psql -U postgres -d postgres -c 'CREATE EXTENSION vector;'"
+    ],
+    "volumePath": "/var/lib/postgresql/data",
+    "dockerImages": {
+        "cpu": {
+            "size": 385485843,
+            "image": "ankane/pgvector:v0.4.4"
+        }
+    },
+    "defaultPort": 5432,
+    "defaultExternalPort": 5432
+}
