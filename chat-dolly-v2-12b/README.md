@@ -6,7 +6,7 @@
 
 ## 💻 Hardware Requirements
 
-> **Memory requirements**: 24.5 GB (24576 bytes).
+> **Memory requirements**: 23.91GiB GB (24484 MiB).
 
 To run the `dolly-v2-12b` service, you'll need the following hardware configuration:
 
