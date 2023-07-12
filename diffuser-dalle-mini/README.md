@@ -2,29 +2,20 @@
 
 ## 📌 Description
 
-Stable Diffusion v1.5 is a sophisticated text-to-image diffusion model capable of generating high-quality images from textual prompts. Developed by Robin Rombach and Patrick Esser, this model is a significant upgrade from its predecessor, Stable Diffusion v1.2, having been fine-tuned on 595k steps at a resolution of 512x512 on `laion-aesthetics v2 5+` with a 10% drop in text-conditioning to enhance classifier-free guidance sampling. <a href='https://github.com/runwayml/stable-diffusion' target='_blank'>Learn More</a>.
+Dall-E Mini is a text-to-image model attempt at reproducing OpenAI's DALL-E model results with an Open Source model. The model is trained by looking at millions of images from the internet with their associated captions. Over time, it learns how to draw an image from a text prompt.
+Some concepts are learned from memory as they may have seen similar images. However, it can also learn how to create unique images that don't exist, such as "the Eiffel tower is landing on the moon," by combining multiple concepts together. A project report on the same by the creators can be found <a href='https://wandb.ai/dalle-mini/dalle-mini/reports/DALL-E-mini-Generate-images-from-any-text-prompt--VmlldzoyMDE4NDAy' target='_blank'>here</a>
 
 ## 💻 Hardware Requirements
 
-To run the `stable-diffusion-1-5` service on Prem, you'll need access to a GPU with at least 16GiB of RAM.
+To run the `dalle-mini` service on Prem, you'll need access to a GPU with at least 32GiB of RAM.
 
 ## 📒 Example Usage
 
-### 1️⃣ Prompt: Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
+### 1️⃣ Prompt: hot tonkotsu ramen bowl, top view
+![hot_tonkotsu_ramen_bowl_top_view](https://github.com/premAI-io/prem-registry/assets/35634788/d89b8a7b-354b-474d-8df1-67475f9311cf)
 
-![WS_USl7I](https://github.com/premAI-io/prem-registry/assets/29598954/7c31ed10-620b-445c-a23d-c34e0fa92b43)
-
-### 2️⃣ Prompt: Low polygon panda 3d
-
-![9rHScaSw](https://github.com/premAI-io/prem-registry/assets/29598954/bafa9c5e-02dd-4a76-8c69-d739e508ad2d)
-
-### 3️⃣ Prompt: 3d hiper-realistic rick sanchez and morty
-
-![PKVb4jfl](https://github.com/premAI-io/prem-registry/assets/29598954/04223540-b736-4952-9aa4-87e08759cd7d)
-
-### 4️⃣ Prompt: Synthwave brad pitt wearing headphones, animated, trending on artstation, portrait
-
-![35pvt7Y9](https://github.com/premAI-io/prem-registry/assets/29598954/cd49a0c4-ec50-44a4-836a-7ea4964b361e)
+### 2️⃣ Prompt: an illustration of doggo wearing a spacesuit
+![an_illustration_of_doggo_wearing_a_spacesuit](https://github.com/premAI-io/prem-registry/assets/35634788/bbb44e88-ceef-4fce-8017-f727bbfdc874)
 
 ## 🛠️ Technical Details
 
@@ -43,22 +34,20 @@ import openai
 
 from PIL import Image
 
-openai.api_base = "http://localhost:9111/v1"
+openai.api_base = "http://localhost:8600/v1"
 openai.api_key = "random-string"
 
-response = openai.Image.create(
-    prompt="Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart",
-    n=1,
-    size="512x512"
+response = response = openai.Image.create(
+    prompt="an illustration of doggo wearing a spacesuit",
+    n=1
 )
 
 image_string = response["data"][0]["b64_json"]
 
 img = Image.open(io.BytesIO(base64.decodebytes(bytes(image_string, "utf-8"))))
-img.save("iron_man.jpeg")
+img.save("space_doggo.png", format="PNG")
 
 ```
 
 ## 📜 License
-
-The model is under CreativeML OpenRAIL M license is an Open RAIL M license, adapted from the work that BigScience and the RAIL Initiative are jointly carrying in the area of responsible AI licensing. See also the article about the BLOOM Open RAIL license on which our license is based.
+It's released under Apache 2.0 License, which enables commercial usage.
