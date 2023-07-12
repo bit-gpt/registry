@@ -15,7 +15,7 @@
     "dockerImages": {
         "gpu": {
             "size": 11980514559,
-            "image": "ghcr.io/premai-io/dalle-mini-gpu:1.0.0"
+            "image": "ghcr.io/premai-io/diffuser-dalle-mini-gpu:1.0.0"
         }
     },
     "defaultPort": 8000,
