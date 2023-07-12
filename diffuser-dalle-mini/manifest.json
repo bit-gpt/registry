@@ -1,0 +1,23 @@
+{
+    "id": "dalle-mini",
+    "name": "DALL-E Mini",
+    "description": "DALL-E Mini is a model that can be used to generate images based on text prompts. OpenAI had the first impressive model for generating images with DALL-E. DALL-E mini is an attempt at reproducing those results with an open-source model. It's released under Apache 2.0 License, allowing commercial usage",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 37222,
+        "secondsPerImage": 1.9
+    },
+    "interfaces": [
+        "diffuser"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 11980514559,
+            "image": "ghcr.io/premai-io/dalle-mini-gpu:1.0.0"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 8600
+}
