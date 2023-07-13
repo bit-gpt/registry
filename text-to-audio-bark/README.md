@@ -12,7 +12,7 @@ To run the `bark` service on Prem, you'll just need a GPU or CPU with at least 6
 
 ### 2️⃣ Prompt: Hello, my name is Suno. And, uh — and I like pizza. [laughs] But I also have other interests such as playing tic tac toe.
 
-[pizza1.webm](https://user-images.githubusercontent.com/34592747/cfa98e54-721c-4b9c-b962-688e09db684f.webm)
+[pizza.webm](https://github.com/premAI-io/prem-registry/assets/29598954/e5e7e0e3-731b-4e31-a236-92f2c36faa31)
 
 ## 🛠️ Technical Details
 
