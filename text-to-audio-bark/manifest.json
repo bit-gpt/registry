@@ -1,21 +1,23 @@
 {
     "id": "bark",
     "name": "Bark",
-    "description": "",
+    "description": "Bark is a transformer-based text-to-audio model created by Suno https://suno.ai/. Bark can generate highly realistic, multilingual speech as well as other audio - including music, background noise, and simple sound effects.",
     "documentation": "",
     "beta": true,
     "icon": "",
-    "modelInfo": {},
+    "modelInfo": {
+        "memoryRequirements": 7065
+    },
     "interfaces": [
         "text-to-audio"
     ],
     "dockerImages": {
         "cpu": {
-            "size": 18381415182,
+            "size": 18393188455,
             "image": "ghcr.io/premai-io/text-to-audio-bark-cpu:1.0.0"
         },
         "gpu": {
-            "size": 33835863375,
+            "size": 34699224198,
             "image": "ghcr.io/premai-io/text-to-audio-bark-gpu:1.0.0"
         }
     },
