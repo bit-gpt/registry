@@ -2,10 +2,12 @@
     "id": "whisper-large-v2",
     "name": "Whisper Large v2",
     "description": "",
-    "documentation": "",
+    "documentation": "Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning.",
     "beta": true,
     "icon": "",
-    "modelInfo": {},
+    "modelInfo": {
+        "memoryRequirements": 6144
+    },
     "interfaces": [
         "audio-to-text"
     ],
