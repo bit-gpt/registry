@@ -16,9 +16,7 @@ To run the `bark` service on Prem, you'll just need a GPU or CPU with at least 6
 
 ## 🛠️ Technical Details
 
-### 🚀 Getting Started with OpenAI Python client
-
-The service exposes the same endpoints as OpenAI DALL-E does. You can directly use the official `openai` python library.
+### 🚀 Getting Started with Python
 
 ```python
 
