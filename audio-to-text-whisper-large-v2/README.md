@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-Whisper Tiny is a compact version of OpenAI's Whisper model, designed for automatic speech recognition (ASR) and speech translation. Despite its smaller size, it retains the powerful capabilities of the larger models, making it suitable for applications where computational resources or storage space are limited. <a href='https://huggingface.co/openai/whisper-large-v2' target='_blank'>Learn More</a>.
+Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning. <a href='https://huggingface.co/openai/whisper-large-v2' target='_blank'>Learn More</a>.
 
 ## 💻 Hardware Requirements
 
@@ -10,7 +10,7 @@ To run the `whisper-large-v2` service on Prem, you'll just need a GPU with at le
 
 ## 📒 Example Usage
 
-Whisper Tiny can be used for various tasks, including English to English transcription, French to French transcription, and French to English translation. It can also handle long-form transcription by using a chunking algorithm, allowing it to transcribe audio samples of arbitrary length.
+Whisper can be used for various tasks, including English to English transcription, French to French transcription, and French to English translation. It can also handle long-form transcription by using a chunking algorithm, allowing it to transcribe audio samples of arbitrary length.
 
 ### 🎶 sample.wav. You can find the file [here](https://github.com/premAI-io/prem-registry/blob/main/audio-to-text-whisper-tiny/sample.wav)
 
