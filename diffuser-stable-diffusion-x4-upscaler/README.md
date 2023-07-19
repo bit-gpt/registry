@@ -10,6 +10,11 @@ To run the `stable-diffusion-x4-upscaler` service on Prem, you'll need access to
 
 ## 📒 Example Usage
 
+### Before:
+![iron_man_image](https://github.com/premAI-io/prem-registry/assets/35634788/4557aa21-3707-4ee0-a92c-280d8158bd62)
+
+### After:
+![iron_man_docker](https://github.com/premAI-io/prem-registry/assets/35634788/fc661788-7805-49c7-bb18-938918bf30b7)
 
 ## 🛠️ Technical Details
 
