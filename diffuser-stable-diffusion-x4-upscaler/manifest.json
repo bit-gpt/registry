@@ -1,0 +1,23 @@
+{
+    "id": "stable-diffusion-x4-upscaler",
+    "name": "Stable Diffusion x4 upscaler",
+    "description": "Stable Diffusion x4 upscaler is a text-guided latent upscaling diffusion model. It is trained for 1.25M steps on a 10M subset of LAION containing images >2048x2048",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 14705,
+        "secondsPerImage": 8
+    },
+    "interfaces": [
+        "diffuser"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 26962657735,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-x4-upscaler-gpu:1.0.3"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 8996
+}
