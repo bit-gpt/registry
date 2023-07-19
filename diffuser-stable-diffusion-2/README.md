@@ -45,7 +45,7 @@ import openai
 
 from PIL import Image
 
-openai.api_base = "http://localhost:9111/v1"
+openai.api_base = "http://localhost:9222/v1"
 openai.api_key = "random-string"
 
 response = openai.Image.create(
@@ -70,7 +70,7 @@ import openai
 
 from PIL import Image
 
-openai.api_base = "http://localhost:8000/v1"
+openai.api_base = "http://localhost:9222/v1"
 openai.api_key = "random-string"
 
 response = openai.Image.create_edit(

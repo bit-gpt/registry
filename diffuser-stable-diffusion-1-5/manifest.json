@@ -14,10 +14,10 @@
     ],
     "dockerImages": {
         "gpu": {
-            "size": 26962657735,
-            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:1.0.2"
+            "size": 26981892692,
+            "image": "ghcr.io/premai-io/diffuser-stable-diffusion-1-5-gpu:1.0.3"
         }
     },
     "defaultPort": 8000,
-    "defaultExternalPort": 9222
+    "defaultExternalPort": 9223
 }
