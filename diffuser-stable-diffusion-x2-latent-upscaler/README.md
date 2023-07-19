@@ -9,6 +9,12 @@ Stable Diffusion x2 Latent Upscaler is a diffusion-based upscaler developed by K
 To run the `stable-diffusion-x2-latent-upscaler` service on Prem, you'll need access to a GPU with at least 16GiB of RAM.
 
 ## 📒 Example Usage
+### Before:
+![iron_man_image](https://github.com/premAI-io/prem-registry/assets/35634788/83122d2a-6951-4c66-afc1-f46a76472640)
+
+
+### After
+![iron_man_docker](https://github.com/premAI-io/prem-registry/assets/35634788/b3b41d3a-d62f-47d0-bedb-8564f7f39882)
 
 
 ## 🛠️ Technical Details
