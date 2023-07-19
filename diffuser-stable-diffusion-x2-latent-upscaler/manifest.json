@@ -10,7 +10,7 @@
         "secondsPerImage": 2
     },
     "interfaces": [
-        "diffuser"
+        "upscaler"
     ],
     "dockerImages": {
         "gpu": {
