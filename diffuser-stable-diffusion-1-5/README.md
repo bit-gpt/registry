@@ -27,9 +27,13 @@ To run the `stable-diffusion-1-5` service on Prem, you'll need access to a GPU w
 ![35pvt7Y9](https://github.com/premAI-io/prem-registry/assets/29598954/cd49a0c4-ec50-44a4-836a-7ea4964b361e)
 
 
+
 ### Prompt: Iron man showing a wide smile + (below image)
+![iron_man_image](https://github.com/premAI-io/prem-registry/assets/35634788/70daa364-e9ea-4f56-a21d-9e3b24780c9d)
 
 #### Output Image:
+![Iron_man_showing_a_wide_smile](https://github.com/premAI-io/prem-registry/assets/35634788/a0a9b15a-1be0-442c-975c-3b0b85c494a1)
+
 
 
 
