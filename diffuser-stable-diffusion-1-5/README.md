@@ -26,11 +26,20 @@ To run the `stable-diffusion-1-5` service on Prem, you'll need access to a GPU w
 
 ![35pvt7Y9](https://github.com/premAI-io/prem-registry/assets/29598954/cd49a0c4-ec50-44a4-836a-7ea4964b361e)
 
+
+### Prompt: Iron man showing a wide smile + (below image)
+
+#### Output Image:
+
+
+
 ## 🛠️ Technical Details
 
 ### 🚀 Getting Started with OpenAI Python client
 
-The service exposes the same endpoints as OpenAI DALL-E does. You can directly use the official `openai` python library.
+The service exposes the same `/image/generations` (for Text-to-Image) and `image/edits` (for Prompt+Image-to-Image) endpoints as OpenAI DALL-E does. You can directly use the official `openai` python library.
+
+#### Text-to-Image
 
 ```python
 
@@ -57,6 +66,32 @@ image_string = response["data"][0]["b64_json"]
 img = Image.open(io.BytesIO(base64.decodebytes(bytes(image_string, "utf-8"))))
 img.save("iron_man.jpeg")
 
+```
+
+#### Prompt + Image-to-Image
+
+```python
+import io
+import base64
+import openai
+
+from PIL import Image
+
+openai.api_base = "http://localhost:8000/v1"
+openai.api_key = "random-string"
+
+response = openai.Image.create_edit(
+  image=open("astronaut.png", "rb"), #assuming you have an astronaut floating image
+  prompt="astronaut floating in dark space, going down towards earth. Super high resolution, unreal engine, ultra realistic",
+  n=1,
+  guidance_scale=9,
+  num_inference_steps=50,
+  size="512x512",
+)
+
+image_string = response["data"][0]["b64_json"]
+img = Image.open(io.BytesIO(base64.decodebytes(bytes(image_string, "utf-8"))))
+img.save("astronaut_edit.png", "PNG")
 ```
 
 ## 📜 License
