@@ -6,15 +6,15 @@
     "beta": true,
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": 14705,
-        "secondsPerImage": 8
+        "memoryRequirements": 2654,
+        "secondsPerImage": 2
     },
     "interfaces": [
         "diffuser"
     ],
     "dockerImages": {
         "gpu": {
-            "size": 26962657735,
+            "size": 24977428837,
             "image": "ghcr.io/premai-io/diffuser-stable-diffusion-x4-upscaler-gpu:1.0.3"
         }
     },

@@ -23,7 +23,7 @@ import io
 import base64
 from PIL import Image
 
-url = 'http://localhost:8000/v1/images/upscale'
+url = 'http://localhost:8996/v1/images/upscale'
 files = {'image': open('iron_man_image.png', 'rb')}  #assuming we have an avg resolution quality iron man image here
 data = {
     'prompt': "Super high resolution image of iron man, highly detailed, real life.",
@@ -41,12 +41,12 @@ img.save("iron_man_highres.png", "PNG")
 
 Or curl equivalent:
 ```bash
-curl -X POST http://localhost:8000/v1/images/upscale \
+curl -X POST http://localhost:8996/v1/images/upscale \
     -F "image=@iron_man_image.png" \
     -F "prompt=Super high resolution image of iron man, highly detailed, real life." \
     -F "n=1" \
     -F "guidance_scale=8" \
-    -o iron_man_highres.png
+    | jq -r '.data[0].b64_json' | base64 -d > iron_man_highres.png
 ```
 
 ## 📜 License
