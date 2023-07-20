@@ -4,7 +4,7 @@ import os
 import sys
 
 APPS = ["chat", "vector-store", "coder", "embeddings",
-        "diffuser", "text-to-audio", "audio-to-text"]
+        "diffuser", "text-to-audio", "audio-to-text", "upscaler"]
 
 manifests = []
 for folder in os.listdir("."):
@@ -13,6 +13,7 @@ for folder in os.listdir("."):
         manifest_path = os.path.join(folder_path, "manifest.json")
         readme_path = os.path.join(folder_path, "README.md")
         logo_path = os.path.join(folder_path, "logo.svg")
+        banner_path = os.path.join(folder_path, "banner.svg")
 
         with open(manifest_path) as f:
             manifest = json.load(f)
@@ -27,6 +28,13 @@ for folder in os.listdir("."):
             ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/{sys.argv[1]}/{folder}/logo.svg"
         else:
             manifest["icon"] = None
+
+        if os.path.exists(banner_path):
+            manifest[
+                "banner"
+            ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/{sys.argv[1]}/{folder}/banner.svg"
+        else:
+            manifest["banner"] = None
 
         manifests.append(manifest)
 
