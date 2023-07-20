@@ -55,6 +55,9 @@ curl -X POST http://localhost:8997/v1/images/upscale \
    | jq -r '.data[0].b64_json' | base64 -d > iron_man_highres.png
 ```
 
+## :no_entry_sign: Limitations
+This upscaler model only works with images generated using other stable diffusion models. To hack around making it work with any image, one can resize the image to `(2^x, 2^x)` where `x` can be any number and then feed the upscaler. Though the upscaling quality gains with this method is negligible.
+
 ## 📜 License
 
 The model is under CreativeML OpenRAIL M license is an Open RAIL M license, adapted from the work that BigScience and the RAIL Initiative are jointly carrying in the area of responsible AI licensing. See also the article about the BLOOM Open RAIL license on which our license is based.
