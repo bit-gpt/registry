@@ -13,7 +13,7 @@ for folder in os.listdir("."):
         manifest_path = os.path.join(folder_path, "manifest.json")
         readme_path = os.path.join(folder_path, "README.md")
         logo_path = os.path.join(folder_path, "logo.svg")
-        banner_path = os.path.join(folder_path, "banner.svg")
+        banner_path = os.path.join(folder_path, "banner.png")
 
         with open(manifest_path) as f:
             manifest = json.load(f)
@@ -32,7 +32,7 @@ for folder in os.listdir("."):
         if os.path.exists(banner_path):
             manifest[
                 "banner"
-            ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/{sys.argv[1]}/{folder}/banner.svg"
+            ] = f"https://raw.githubusercontent.com/premAI-io/prem-registry/{sys.argv[1]}/{folder}/banner.png"
         else:
             manifest["banner"] = None
 
