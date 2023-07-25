@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-Falcon-7B-Instruct is a 7B parameters causal decoder-only model built by TII based on Falcon-7B and finetuned on a mixture of chat/instruct datasets. The model is particularly designed for commercial use and its inference can be run on various GPU configurations. <a href='https://huggingface.co/tiiuae/falcon-7b-instruct' target='_blank'>Learn More</a>
+Llama V2 13B Chat, developed by Meta, is an auto-regressive language model that uses an optimized transformer architecture. It's a 13B parameters finetuned Chat model version using supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license and its inference can be run on various GPU configurations. <a href='https://huggingface.co/meta-llama/Llama-2-13b-chat' target='_blank'>Learn More</a>
 
 ## 💻 Hardware Requirements
 
@@ -121,19 +121,11 @@ chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
 print(chain.run(user_message=user_message))
 ```
 
-### 🔎 Quality Benchmarks
-
-It outperforms comparable open-source models (e.g., MPT-7B, StableLM, RedPajama etc.)
-
-Base model Falcon-7B is trained on English and French data only, and will not generalize appropriately to other languages. Furthermore, as it is trained on a large-scale corpora representative of the web, it will carry the stereotypes and biases commonly encountered online.
-
 ### 🚫 Limitations and Biases
 
-We have noticed that the model sometimes generates responses that are not relevant and mostly gibberish like letters and numbers or just repeating the same words. E.g - xjskdafhnwne$. Also we found that it generates hashtag like words like #falcon7b, #falcon7binstruct etc, which seems to be a bias coming from the finetuning data as it is trained on a large-scale corpora representative of the web, it will carry the stereotypes and biases commonly encountered online.
+Llama 2 is a new technology that carries risks with use. Testing conducted to date has been in English, and has not covered, nor could it cover all scenarios. For these reasons, as with all LLMs, Llama 2’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate, biased or other objectionable responses to user prompts. Therefore, before deploying any applications of Llama 2, developers should perform safety testing and tuning tailored to their specific applications of the model.
 
-We recommend users of Falcon-7B-Instruct to develop guardrails and to take appropriate precautions for any production use.
-
+Please see the Responsible Use Guide released by <a href='https://ai.meta.com/llama/responsible-use-guide/' target='_blank'>Meta here.</a>
 
 ## 📜 License
-Falcon-7B was trained on 1,500B tokens of <a href='https://huggingface.co/datasets/tiiuae/falcon-refinedweb' target='_blank'>RefinedWeb</a>, a high-quality filtered and deduplicated web dataset which we enhanced with curated corpora. Significant components from our curated copora were inspired by <a href='https://arxiv.org/abs/2101.00027' target='_blank'>The Pile (Gao et al., 2020).</a>
-It is made available under a permissive Apache 2.0 license allowing for commercial use, without any royalties or restrictions.
+It is made available under a custom commercial license, which is available <a href='https://ai.meta.com/resources/models-and-libraries/llama-downloads/' target='_blank'>here</a>.
