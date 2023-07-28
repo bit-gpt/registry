@@ -15,7 +15,7 @@
     "dockerImages": {
         "gpu": {
             "size": 33304486337,
-            "image": "ghcr.io/premai-io/chat-llama-2-7b-gpu:1.0.0"
+            "image": "ghcr.io/premai-io/chat-llama-2-7b-gpu:1.0.1"
         }
     },
     "defaultPort": 8000,
