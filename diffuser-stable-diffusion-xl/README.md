@@ -11,16 +11,20 @@ To run the `stable-diffusion-xl` service on Prem, you'll need access to a GPU wi
 ## 📒 Example Usage
 
 ### 1️⃣ Prompt: Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
+![iron_man](https://github.com/premAI-io/prem-registry/assets/35634788/755f6d9e-b13d-4e1a-bc9d-571e1b6e2490)
 
 
 ### 2️⃣ Prompt: Low polygon panda 3d
+![panda](https://github.com/premAI-io/prem-registry/assets/35634788/a8ef471b-dbb4-4dde-869d-80fa48d4bd48)
 
 
 ### 3️⃣ Prompt: 3d hiper-realistic rick sanchez and morty
+![rick](https://github.com/premAI-io/prem-registry/assets/35634788/b2abbf8d-39e7-4337-8e30-71d3701c4295)
 
 
 
 ### 4️⃣ Prompt: Synthwave brad pitt wearing headphones, animated, trending on artstation, portrait
+![brad_pitt](https://github.com/premAI-io/prem-registry/assets/35634788/d6f80543-9729-4090-82d6-4fea1d9ea608)
 
 
 
