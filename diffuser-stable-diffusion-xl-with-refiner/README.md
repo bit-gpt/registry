@@ -11,17 +11,21 @@ To run the `stable-diffusion-xl-with-refiner` service on Prem, you'll need acces
 ## 📒 Example Usage
 
 ### 1️⃣ Prompt: Iron man portrait, highly detailed, science fiction landscape, art style by klimt and nixeu and ian sprigger and wlop and krenz cushart
+![iron_man_refiner](https://github.com/premAI-io/prem-registry/assets/35634788/c9877a23-8999-4a71-883a-ce0444f06001)
 
 
 ### 2️⃣ Prompt: Low polygon panda 3d
+![panda_refiner](https://github.com/premAI-io/prem-registry/assets/35634788/db09d6e4-fe81-4d52-b6aa-4dda9f3a135d)
 
 
 ### 3️⃣ Prompt: 3d hiper-realistic rick sanchez and morty
+![rick_refiner](https://github.com/premAI-io/prem-registry/assets/35634788/f9855ccf-efd5-48a1-9b76-d248b4c73623)
 
 
 
 ### 4️⃣ Prompt: Synthwave brad pitt wearing headphones, animated, trending on artstation, portrait
 
+![brad_pitt_refiner](https://github.com/premAI-io/prem-registry/assets/35634788/65ff7a7a-1293-4fb5-997c-db08f3ea0eb1)
 
 
 
