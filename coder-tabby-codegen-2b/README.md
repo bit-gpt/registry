@@ -8,11 +8,11 @@ CodeGen-Multi 2B is part of the CodeGen family, specifically designed for progra
 
 > **Memory requirements**: 3.129 GB (3204 MiB).
 
-To run the `tabby-codegen-2b` service, you'll need at least a RTX 3080 GPU with 10GB of memory.
+To run the `tabby-codegen-2b` service, you'll need at least an RTX3080 GPU with 10GB of memory.
 
 ## 📒 Example Usage
 
-IMAGE
+<img width="367" alt="Screenshot 2023-08-01 at 11 44 31" src="https://github.com/premAI-io/prem-registry/assets/29598954/c4efe223-d21f-4d5a-a760-ea30cdf25a23">
 
 ## 🛠️ Technical Details
 
@@ -20,15 +20,15 @@ IMAGE
 
 1. Install Tabby VSCode Extension <a href='https://marketplace.visualstudio.com/items?itemName=TabbyML.vscode-tabby' target='_blank'>here</a>
 
-IMAGE
+<img width="1207" alt="Screenshot 2023-08-01 at 12 27 29" src="https://github.com/premAI-io/prem-registry/assets/29598954/05a85487-b2ad-4bcb-89fb-d610398b2f72">
 
 2. Enable the extension and provide the URL where the service is running
 
-IMAGE
+<img width="1180" alt="Screenshot 2023-08-01 at 12 28 07" src="https://github.com/premAI-io/prem-registry/assets/29598954/258eaa26-78cd-41a8-a4f1-c4924f0696aa">
 
 ### 🔎 Quality Benchmarks
 
-We evaluate our models on two code generation benchmark: HumanEval and MTPB. Please refer to the <a href='https://arxiv.org/abs/2203.13474' target='_blank'>paper</a> for more details.
+The model has been evaluated on two code generation benchmarks: HumanEval and MTPB. Please refer to the <a href='https://arxiv.org/abs/2203.13474' target='_blank'>paper</a> for more details.
 
 ### 🚫 Limitations and Biases
 
