@@ -26,6 +26,10 @@ To run the `tabby-codegen-2b` service, you'll need at least an RTX3080 GPU with 
 
 <img width="1180" alt="Screenshot 2023-08-01 at 12 28 07" src="https://github.com/premAI-io/prem-registry/assets/29598954/258eaa26-78cd-41a8-a4f1-c4924f0696aa">
 
+3. Wait a few minutes
+
+The model will be downloaded when the server starts. For this reason, you will need a few minutes before the extension starts to work properly.
+
 ### 🔎 Quality Benchmarks
 
 The model has been evaluated on two code generation benchmarks: HumanEval and MTPB. Please refer to the <a href='https://arxiv.org/abs/2203.13474' target='_blank'>paper</a> for more details.
