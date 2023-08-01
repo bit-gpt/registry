@@ -8,7 +8,7 @@ CodeGen-Multi 2B is part of the CodeGen family, specifically designed for progra
 
 > **Memory requirements**: 3.129 GB (3204 MiB).
 
-To run the `tabby-codegen-2b` service, you'll need at least a RTX 3080 GPU with 10GB of memory.
+To run the `tabby-codegen-2b` service, you'll need at least an RTX3080 GPU with 10GB of memory.
 
 ## 📒 Example Usage
 
@@ -28,7 +28,7 @@ To run the `tabby-codegen-2b` service, you'll need at least a RTX 3080 GPU with 
 
 ### 🔎 Quality Benchmarks
 
-We evaluate our models on two code generation benchmark: HumanEval and MTPB. Please refer to the <a href='https://arxiv.org/abs/2203.13474' target='_blank'>paper</a> for more details.
+The model has been evaluated on two code generation benchmarks: HumanEval and MTPB. Please refer to the <a href='https://arxiv.org/abs/2203.13474' target='_blank'>paper</a> for more details.
 
 ### 🚫 Limitations and Biases
 
