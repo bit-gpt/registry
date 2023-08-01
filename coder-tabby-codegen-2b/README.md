@@ -18,7 +18,7 @@ IMAGE
 
 ### 🐯 Getting Started with Tabby VSCode Extension
 
-1. Install Tabby VSCode Extension <a href='https://huggingface.co/spaces/bigcode/license' target='_blank'>here</a>
+1. Install Tabby VSCode Extension <a href='https://marketplace.visualstudio.com/items?itemName=TabbyML.vscode-tabby' target='_blank'>here</a>
 
 IMAGE
 
