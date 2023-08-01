@@ -1,0 +1,25 @@
+{
+    "id": "tabby-codegen-2b",
+    "name": "Tabby CodeGen 2B",
+    "description": "",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 3204
+    },
+    "interfaces": [
+        "coder"
+    ],
+    "execCommands": [
+        "serve --model TabbyML/Codegen-2B --device cuda"
+    ],
+    "dockerImages": {
+        "gpu": {
+            "size": 2110513844,
+            "image": "tabbyml/tabby:latest"
+        }
+    },
+    "defaultPort": 8000,
+    "defaultExternalPort": 10111
+}
