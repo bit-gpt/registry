@@ -12,7 +12,7 @@ To run the `tabby-codegen-2b` service, you'll need at least an RTX3080 GPU with 
 
 ## 📒 Example Usage
 
-<img width="491" alt="Screenshot 2023-08-01 at 22 46 39" src="https://github.com/premAI-io/prem-registry/assets/29598954/feb7b554-e098-4530-b3c5-c5ab4e01da9d">
+<img width="463" alt="Screenshot 2023-08-01 at 22 46 39" src="https://github.com/premAI-io/prem-registry/assets/29598954/04188ee4-9fbc-4d2d-9c3a-2aca359a92e3">
 
 ## 🛠️ Technical Details
 
