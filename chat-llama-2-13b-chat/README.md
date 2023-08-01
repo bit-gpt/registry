@@ -56,15 +56,6 @@ We recommend users of Llama-V2-13B-Chat to develop guardrails and to take approp
 
 An example would be using a Chat Prompt Template as shown below:
 
-Prompt:
-```
-You are an AI assistant in a conversational setting.
-Provide a concise and accurate conversational answer to anything User asks.
-===================
-
-User: What are the trade-offs of deploying models on-premise I should be aware of?
-Assistant:"""
-```
 
 ## 🛠️ Technical Details
 
@@ -88,38 +79,8 @@ messages = [HumanMessage(content="What are the trade-offs of deploying models on
 print(chat(messages))
 ```
 
-For using it in a chat setting we recommend using a Chat Prompt Template as shown below:
-
 > To know more on how to handle multi-turn conversation prompts specially for Llama-v2, check out: https://huggingface.co/blog/llama2#how-to-prompt-llama-2
-    
-```python
 
-import os
-from langchain.chat_models import ChatOpenAI
-from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-
-os.environ["OPENAI_API_KEY"] = "random-string"
-
-chat_template = """<s>[INST] <<SYS>>
-You are a helpful, respectful and honest assistant. Always answer as helpfully as possible, while being safe.  Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.
-
-If a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.
-<</SYS>>
-
-{user_message} [/INST]"""
-
-prompt = PromptTemplate(
-    input_variables=["user_message"],
-    template=chat_template,
-)
-
-user_message = "Why do I need to run machine learning models on-premise?"
-
-chat = ChatOpenAI(openai_api_base="http://localhost:8230/v1", max_tokens=4096)
-chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
-print(chain.run(user_message=user_message))
-```
 
 ### 🚫 Limitations and Biases
 
