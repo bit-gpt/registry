@@ -18,6 +18,6 @@
             "image": "tabbyml/tabby:latest"
         }
     },
-    "defaultPort": 8000,
+    "defaultPort": 8080,
     "defaultExternalPort": 10111
 }
