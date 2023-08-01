@@ -28,7 +28,7 @@ To run the `tabby-codegen-2b` service, you'll need at least an RTX3080 GPU with 
 
 3. Wait a few minutes
 
-The model will be downloaded when the server starts. For this reason, you will need a few minutes before the extension starts to work properly.
+> The model will be downloaded when the server starts. For this reason, you will need a few minutes before the extension starts to work properly.
 
 ### 🔎 Quality Benchmarks
 
