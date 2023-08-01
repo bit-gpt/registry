@@ -11,9 +11,7 @@
     "interfaces": [
         "coder"
     ],
-    "execCommands": [
-        "serve --model TabbyML/Codegen-2B --device cuda"
-    ],
+    "command": "serve --model TabbyML/Codegen-2B --device cuda",
     "dockerImages": {
         "gpu": {
             "size": 2110513844,
