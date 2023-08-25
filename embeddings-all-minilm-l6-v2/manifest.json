@@ -10,11 +10,11 @@
     "dockerImages": {
         "cpu": {
             "size": 1238261448,
-            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:1.0.2"
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-cpu:1.0.3"
         },
         "gpu": {
             "size": 20687072077,
-            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:1.0.2"
+            "image": "ghcr.io/premai-io/embeddings-all-minilm-l6-v2-gpu:1.0.3"
         }
     },
     "interfaces": [
