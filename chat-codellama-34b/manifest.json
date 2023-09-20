@@ -1,9 +1,9 @@
 {
-    "id": "stable-beluga-2",
-    "name": "Stable Beluga 2",
+    "id": "codellama-34b",
+    "name": "Code Llama 34B",
     "beta": true,
     "petals": true,
-    "description": "Stable Beluga 2 is a Llama2 70B model finetuned on an Orca style Dataset.",
+    "description": "Code Llama 34 is designed for general code synthesis and understanding.",
     "documentation": "",
     "icon": "",
     "modelInfo": {
@@ -16,9 +16,9 @@
     "dockerImages": {
         "cpu": {
             "size": 2687506461,
-            "image": "ghcr.io/premai-io/chat-stable-beluga-2-cpu:1.0.0"
+            "image": "ghcr.io/premai-io/chat-codellama-34b-cpu:1.0.0"
         }
     },
     "defaultPort": 8000,
-    "defaultExternalPort": 8453
+    "defaultExternalPort": 8454
 }
