@@ -16,7 +16,7 @@
     "dockerImages": {
         "cpu": {
             "size": 2687506461,
-            "image": "ghcr.io/premai-io/chat-stable-beluga-2-cpu:1.0.0"
+            "image": "ghcr.io/premai-io/chat-stable-beluga-2-cpu:1.0.1"
         }
     },
     "defaultPort": 8000,
