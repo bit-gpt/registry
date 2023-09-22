@@ -1,0 +1,19 @@
+{
+    "id": "tabby-codellama-7B",
+    "type": "binary",
+    "name": "Tabby CodeLlama 7B",
+    "description": "",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 3204
+    },
+    "interfaces": [
+        "coder"
+    ],
+    "volumePath": "/data",
+    "command": "serve --model TabbyML/CodeLlama-7B --device cuda",
+    "defaultPort": 8080,
+    "defaultExternalPort": 10111
+}
