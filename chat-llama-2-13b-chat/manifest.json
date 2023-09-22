@@ -1,8 +1,8 @@
 {
     "id": "llama-2-13b-chat",
-    "name": "Llama V2 13B Chat",
+    "name": "Llama v2 13B Chat",
     "beta": true,
-    "description": "Llama V2 13B Chat, developed by Meta, is an auto-regressive language model that uses an optimized transformer architecture. It's a 13B parameters finetuned Chat model version using supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license.",
+    "description": "Llama v2 13B Chat, developed by Meta, is an auto-regressive language model that uses an optimized transformer architecture. It's a 13B parameters finetuned Chat model version using supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license.",
     "documentation": "",
     "icon": "",
     "modelInfo": {
