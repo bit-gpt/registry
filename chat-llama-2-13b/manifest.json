@@ -1,8 +1,8 @@
 {
     "id": "llama-2-13b",
-    "name": "Llama V2 13B",
+    "name": "Llama v2 13B",
     "beta": true,
-    "description": "Llama V2 13B, developed by Meta, is 13B parameters auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license.",
+    "description": "Llama v2 13B, developed by Meta, is 13B parameters auto-regressive language model that uses an optimized transformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license.",
     "documentation": "",
     "icon": "",
     "modelInfo": {
