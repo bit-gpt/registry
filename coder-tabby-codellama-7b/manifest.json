@@ -12,7 +12,6 @@
     "interfaces": [
         "coder"
     ],
-    "volumePath": "/data",
     "command": "serve --model TabbyML/CodeLlama-7B --device cuda",
     "defaultPort": 8080,
     "defaultExternalPort": 10111
