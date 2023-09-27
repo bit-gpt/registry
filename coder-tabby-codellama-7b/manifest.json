@@ -1,6 +1,7 @@
 {
     "id": "tabby-codellama-7B",
     "type": "binary",
+    "version": "1",
     "name": "Tabby CodeLlama 7B",
     "description": "",
     "documentation": "",
