@@ -12,7 +12,7 @@
     "interfaces": [
         "coder"
     ],
-    "command": "serve --model TabbyML/CodeLlama-7B --device cuda",
+    "command": "serve --model TabbyML/CodeLlama-7B --device metal",
     "defaultPort": 8080,
     "defaultExternalPort": 10111
 }
