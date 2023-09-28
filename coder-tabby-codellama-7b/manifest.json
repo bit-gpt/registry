@@ -13,7 +13,10 @@
     "interfaces": [
         "coder"
     ],
-    "command": "serve --model TabbyML/CodeLlama-7B --device metal",
     "defaultPort": 8080,
-    "defaultExternalPort": 10111
+    "defaultExternalPort": 10111,
+    "modelUrl": "https://github.com/TabbyML/tabby/releases/download/v0.1.2/tabby_aarch64-apple-darwin",
+    "weightsUrl": "",
+    "serveCommand": "serve --model TabbyML/CodeLlama-7B --device metal",
+    "downloadCommand": "download --model TabbyML/CodeLlama-7B"
 }
