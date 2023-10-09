@@ -17,5 +17,6 @@
     "defaultExternalPort": 10111,
     "weightsUrl": "",
     "serveCommand": "serve --model TabbyML/CodeLlama-7B --device metal",
-    "huggingFaceId": "TabbyML/CodeLlama-7B"
+    "huggingFaceId": "TabbyML/CodeLlama-7B",
+    "modelFiles": ["tabby.json", "tokenizer.json", "ggml/q8_0.gguf"]
 }
