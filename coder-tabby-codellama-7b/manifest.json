@@ -16,7 +16,9 @@
     "defaultPort": 8080,
     "defaultExternalPort": 10111,
     "weightsUrl": "",
-    "binaryUrl": "https://github.com/TabbyML/tabby/releases/download/v0.3.0/tabby_aarch64-apple-darwin",
+    "binariesUrl": {
+        "apple-darwin": "https://github.com/TabbyML/tabby/releases/download/v0.3.0/tabby_aarch64-apple-darwin"
+    },
     "serveCommand": "serve --model TabbyML/CodeLlama-7B --device metal",
     "huggingFaceId": "TabbyML/CodeLlama-7B",
     "modelFiles": [
