@@ -1,0 +1,30 @@
+{
+    "id": "tabby-starcoder-1b",
+    "serviceType": "binary",
+    "version": "1",
+    "name": "Tabby StarCoder 1B",
+    "description": "",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 3204
+    },
+    "interfaces": [
+        "coder"
+    ],
+    "defaultPort": 8000,
+    "defaultExternalPort": 8000,
+    "weightsDirectoryUrl": "https://huggingface.co/TabbyML/StarCoder-1B/resolve/main/",
+    "weightsFiles": [
+        "tabby.json",
+        "tokenizer.json",
+        "ggml/q8_0.gguf"
+    ],
+    "binariesUrl": {
+        "aarch64-apple-darwin": "https://github.com/TabbyML/tabby/releases/download/v0.3.0/tabby_aarch64-apple-darwin",
+        "x86_64-apple-darwin": null,
+        "universal-apple-darwin": null
+    },
+    "serveCommand": "./tabby_aarch64-apple-darwin serve --model ./models/tabby-starcoder-1b/ --device metal"
+}
