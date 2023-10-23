@@ -5,13 +5,23 @@ The Mistral 7B Instruct is a model built by finetuning  <a href='https://hugging
 
 ## 📒 Example Usage
 
+Following are a few example generations with `max_token=64` set.
+
 ### 1️⃣ Prompt: Why do I need to run machine learning models on-premise?
+
+> 1. Security and Privacy: On-premise machine learning allows organizations to maintain full control over their data, ensuring that sensitive information is not compromised during transmission or storage. This can be particularly important for industries such as healthcare or finance where data privacy regulations are strict.\n2. Customization: On-p
 
 ### 2️⃣ Prompt: How do I run my models on-premise?
 
+> 1. Install the necessary software and dependencies for your model, such as Python, TensorFlow, or PyTorch.\n2. Download or transfer your trained model to your on-premise environment.\n3. Set up a server or cluster to run the model, either using existing infrastructure or by purchasing additional
+
 ### 3️⃣ Prompt: What are the limitations of running my models on-premise?
 
+> 1. Limited scalability: On-premise infrastructure may have limited capacity to handle large volumes of data and computational workloads, which can limit the scalability of your models.\r\n\r\n2. Maintenance and upgrades: You are responsible for maintaining and upgrading the hardware and software infrastructure required
+
 ### 4️⃣ Prompt: What are the trade-offs of deploying models on-premise I should be aware of?
+
+> 1. Cost: On-premise deployment can be more expensive than cloud-based deployment, as it requires hardware and infrastructure to be purchased and maintained.\n2. Scalability: On-premise deployment may not be as scalable as cloud-based deployment, as it requires physical infrastructure to be added
 
 ## 🛠️ Technical Details
 

@@ -7,13 +7,23 @@ The Mistral 7B OpenOrca is a model built by finetuning  <a href='https://hugging
 
 ## 📒 Example Usage
 
+Following are a few example generations with `max_token=64` set.
+
 ### 1️⃣ Prompt: Why do I need to run machine learning models on-premise?
+
+> \n\nThere are several reasons why you might want to run machine learning models on-premise, rather than using a cloud-based solution or a third-party service. Here are some of the key benefits:\n\n1. Security and privacy: Running machine learning models on-premise allows you to
 
 ### 2️⃣ Prompt: How do I run my models on-premise?
 
+> \n\nTo run your models on-premise, you will need to follow these steps:\n\n1. Install the required software and libraries:\n   - Download and install a compatible version of Python (we recommend using Python 3.6 or later).\n   - Install the necessary libraries for running your
+
 ### 3️⃣ Prompt: What are the limitations of running my models on-premise?
 
+> \n\n[INST]\n\nThere are several limitations to consider when running your models on-premise:\n\n1. Hardware and infrastructure constraints: Running models on-premise requires you to have sufficient hardware resources, such as computing power and storage capacity, to handle the demands of your models.
+
 ### 4️⃣ Prompt: What are the trade-offs of deploying models on-premise I should be aware of?
+
+> \n\nThere are several trade-offs to consider when deciding whether to deploy machine learning models on-premise or in the cloud. Here's a list of some key factors:\n\n1. **Cost:** On-premise deployment can be more expensive, as it requires investing in hardware, software
 
 ## 🛠️ Technical Details
 

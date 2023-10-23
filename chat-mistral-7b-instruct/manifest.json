@@ -8,7 +8,7 @@
     "version": "1",
     "icon": "",
     "modelInfo": {
-        "memoryRequirements": 4096
+        "memoryRequirements": 4800
     },
     "interfaces": [
         "chat"
