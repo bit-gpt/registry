@@ -27,9 +27,23 @@
         "tokenizer_config.json"
     ],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh",
-        "x86_64-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh",
-        "universal-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh"
+        "aarch64-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh",
+        "x86_64-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh",
+        "universal-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh"
     },
-    "serveCommand": "./setup-petals.sh --model_path ./ml/models--petals-team--StableBeluga2 --dht_prefix StableBeluga2-hf --port 8734"
+    "userOptions": {
+        "ModelPath": {
+            "type": "str",
+            "help": "Path to locally available model files",
+            "default": "./ml/models--petals-team--StableBeluga2",
+            "choices": null
+        },
+        "DHTPrefix": {
+            "type": "str",
+            "help": "DHT prefix to use",
+            "default": "StableBeluga2-hf",
+            "choices": null
+        }
+    },
+    "serveCommand": "./setup-petals.sh --model_path {ModelPath} --dht_prefix {DHTPrefix} --port {externalPort}"
 }
