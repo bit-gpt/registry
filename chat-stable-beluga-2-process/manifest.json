@@ -1,0 +1,35 @@
+{
+    "id": "stable-beluga-2",
+    "serviceType": "process",
+    "version": "1",
+    "name": "Stable Beluga 2",
+    "description": "",
+    "documentation": "",
+    "beta": true,
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 5740
+    },
+    "interfaces": [
+        "chat"
+    ],
+    "defaultPort": 8734,
+    "defaultExternalPort": 8734,
+    "weightsDirectoryUrl": "https://huggingface.co/petals-team/StableBeluga2/resolve/main/",
+    "weightsFiles": [
+        "config.json",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer.model",
+        "generation_config.json",
+        "model_00081-of-00081.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json"
+    ],
+    "binariesUrl": {
+        "aarch64-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh",
+        "x86_64-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh",
+        "universal-apple-darwin": "https://raw.githubusercontent.com/biswaroop1547/prem-services/main/cht-petals/setup-petals.sh"
+    },
+    "serveCommand": "./setup-petals.sh --model_path ./ml/models--petals-team--StableBeluga2 --dht_prefix StableBeluga2-hf --port 8734"
+}
