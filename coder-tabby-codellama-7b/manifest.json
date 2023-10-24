@@ -14,7 +14,7 @@
         "coder"
     ],
     "defaultPort": 8080,
-    "defaultExternalPort": 10111,
+    "defaultExternalPort": 8467,
     "weightsDirectoryUrl": "https://huggingface.co/TabbyML/CodeLlama-7B/resolve/main/",
     "weightsFiles": [
         "tabby.json",
@@ -26,5 +26,5 @@
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "tabby_aarch64-apple-darwin serve --model . --device metal"
+    "serveCommand": "tabby_aarch64-apple-darwin serve --model . --device metal --port 8467"
 }
