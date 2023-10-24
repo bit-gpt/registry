@@ -26,5 +26,5 @@
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "./tabby_aarch64-apple-darwin serve --model ./models/tabby-codellama-7B/ --device metal"
+    "serveCommand": "tabby_aarch64-apple-darwin serve --model . --device metal"
 }
