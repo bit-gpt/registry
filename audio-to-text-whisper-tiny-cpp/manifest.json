@@ -14,12 +14,14 @@
         "audio-to-text"
     ],
     "defaultExternalPort": 9446,
-    "weightsDirectoryUrl": null,
-    "weightsFiles": [],
+    "weightsDirectoryUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/",
+    "weightsFiles": [
+        "ggml-tiny.bin"
+    ],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://github.com/tiero/whisper-cli-rs/releases/download/v0.1.7/whisper",
+        "aarch64-apple-darwin": "https://github.com/tiero/whisper-cli-rs/releases/download/v0.1.8/whisper",
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "whisper serve -p 9446"
+    "serveCommand": "whisper serve  --model-path=ggml-tiny.bin --port=9446"
 }
