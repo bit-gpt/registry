@@ -14,7 +14,7 @@
         "chat"
     ],
     "defaultPort": 8000,
-    "defaultExternalPort": 8449,
+    "defaultExternalPort": 8446,
     "weightsDirectoryUrl": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GGUF/resolve/main/",
     "weightsFiles": [
         "mistral-7b-openorca.Q5_K_S.gguf"
@@ -24,5 +24,5 @@
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "./cht-llama-cpp-mistral-1-aarch64-apple-darwin --model_path=mistral-7b-openorca.Q5_K_S.gguf"
+    "serveCommand": "./cht-llama-cpp-mistral-1-aarch64-apple-darwin --model_path=mistral-7b-openorca.Q5_K_S.gguf --port=8446"
 }
