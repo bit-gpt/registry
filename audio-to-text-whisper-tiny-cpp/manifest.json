@@ -19,7 +19,7 @@
         "ggml-tiny.bin"
     ],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://github.com/tiero/whisper-cli-rs/releases/download/v0.1.8/whisper",
+        "aarch64-apple-darwin": "https://github.com/tiero/whisper-cli-rs/releases/download/v0.1.9/whisper",
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
