@@ -31,5 +31,5 @@
         "x86_64-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh",
         "universal-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh"
     },
-    "serveCommand": "setup-petals.sh --model-path . --dht-prefix StableBeluga2-hf --port 8734"
+    "serveCommand": "setup-petals.sh --model-id petals-team/StableBeluga2 --model-path . --dht-prefix StableBeluga2-hf --port 8734"
 }
