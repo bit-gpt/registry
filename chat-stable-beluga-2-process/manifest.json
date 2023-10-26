@@ -31,19 +31,5 @@
         "x86_64-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh",
         "universal-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/dev/cht-petals/setup-petals.sh"
     },
-    "userOptions": {
-        "ModelPath": {
-            "type": "str",
-            "help": "Path to locally available model files",
-            "default": "./ml/models--petals-team--StableBeluga2",
-            "choices": null
-        },
-        "DHTPrefix": {
-            "type": "str",
-            "help": "DHT prefix to use",
-            "default": "StableBeluga2-hf",
-            "choices": null
-        }
-    },
-    "serveCommand": "./setup-petals.sh --model_path {ModelPath} --dht_prefix {DHTPrefix} --port {externalPort}"
+    "serveCommand": "setup-petals.sh --model-path . --dht-prefix StableBeluga2-hf --port 8734"
 }
