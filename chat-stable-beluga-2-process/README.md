@@ -58,7 +58,7 @@ from langchain.chat_models import ChatOpenAI
 
 os.environ["OPENAI_API_KEY"] = "random-string"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8453/v1", max_tokens=1024)
+chat = ChatOpenAI(openai_api_base="http://localhost:8734/v1", max_tokens=1024)
 messages = [HumanMessage(content="Why do I need to run machine learning models on-premise?")]
 print(chat(messages))
 
@@ -91,7 +91,7 @@ prompt = PromptTemplate(
 
 user_message = "Why do I need to run machine learning models on-premise?"
 
-chat = ChatOpenAI(openai_api_base="http://localhost:8453/v1", max_tokens=1024)
+chat = ChatOpenAI(openai_api_base="http://localhost:8734/v1", max_tokens=1024)
 chain = LLMChain(llm=chat, prompt=prompt, verbose=True)
 print(chain.run(user_message=user_message))
 
