@@ -3,7 +3,7 @@
     "serviceType": "binary",
     "version": "1",
     "name": "Stable Beluga 2",
-    "description": "",
+    "description": "Stable Beluga 2 is a Llama2 70B model finetuned on an Orca style Dataset.",
     "documentation": "",
     "beta": true,
     "petals": true,
