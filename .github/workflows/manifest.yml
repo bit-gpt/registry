@@ -2,7 +2,7 @@ name: Generate Manifest File
 
 on:
   push:
-    branches: ["main", "dev"]
+    branches: ["main", "dev", "v1"]
 
 jobs:
   manifest:
