@@ -14,8 +14,10 @@
     ],
     "defaultPort": 8444,
     "defaultExternalPort": 8444,
-    "weightsDirectoryUrl": null,
-    "weightsFiles": [],
+    "weightsDirectoryUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/",
+    "weightsFiles": [
+        "ggml-tiny.bin"
+    ],
     "binariesUrl": {
         "aarch64-apple-darwin": "https://github.com/tiero/prem-services/releases/download/v1/ebd-all-minilm-1-aarch64-apple-darwin",
         "x86_64-apple-darwin": null,
