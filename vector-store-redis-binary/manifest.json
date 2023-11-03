@@ -3,13 +3,16 @@
     "name": "Redis Vector DB",
     "description": "Redis, short for Remote Dictionary Server, serves as a multifunctional in-memory data structure store. It functions as a distributed key-value database, cache, and message broker, all operating in-memory for high-speed data access. With optional durability, Redis ensures data persistence despite potential system failures. [Learn More](https://redis.com/solutions/use-cases/vector-database/)",
     "documentation": "",
+    "version": "1",
     "serviceType": "binary",
     "beta": true,
     "interfaces": [
         "vector-store"
     ],
     "icon": "",
-    "modelInfo": {},
+    "modelInfo": {
+        "memoryRequirements": 4800
+    },
     "defaultPort": 6380,
     "defaultExternalPort": 6380,
     "weightsDirectoryUrl": "https://raw.githubusercontent.com/premAI-io/prem-services/main/vec-redis/",
