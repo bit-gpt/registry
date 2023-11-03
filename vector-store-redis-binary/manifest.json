@@ -25,5 +25,5 @@
         "universal-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/main/vec-redis/setup-redis.sh"
     },
     "serveCommand": "setup-redis.sh --port 6380",
-    "skip_health_check": true
+    "skipHealthCheck": true
 }
