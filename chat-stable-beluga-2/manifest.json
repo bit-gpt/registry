@@ -1,11 +1,13 @@
 {
     "id": "stable-beluga-2",
+    "serviceType": "binary",
+    "version": "1",
     "name": "Stable Beluga 2",
+    "description": "Stable Beluga 2 is a Llama2 70B model finetuned on an Orca style Dataset.",
+    "documentation": "",
     "beta": true,
     "petals": true,
     "petals_id": "StableBeluga2",
-    "description": "Stable Beluga 2 is a Llama2 70B model finetuned on an Orca style Dataset.",
-    "documentation": "",
     "icon": "",
     "modelInfo": {
         "memoryRequirements": 4096,
@@ -14,12 +16,23 @@
     "interfaces": [
         "chat"
     ],
-    "dockerImages": {
-        "cpu": {
-            "size": 2687506461,
-            "image": "ghcr.io/premai-io/chat-stable-beluga-2-cpu:1.0.1"
-        }
+    "defaultPort": 8734,
+    "defaultExternalPort": 8734,
+    "weightsDirectoryUrl": "https://huggingface.co/petals-team/StableBeluga2/resolve/main/",
+    "weightsFiles": [
+        "config.json",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer.model",
+        "generation_config.json",
+        "model_00081-of-00081.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json"
+    ],
+    "binariesUrl": {
+        "aarch64-apple-darwin": null,
+        "x86_64-apple-darwin": null,
+        "universal-apple-darwin": "https://raw.githubusercontent.com/premAI-io/prem-services/main/cht-petals/setup-petals.sh"
     },
-    "defaultPort": 8000,
-    "defaultExternalPort": 8453
+    "serveCommand": "setup-petals.sh --model-id petals-team/StableBeluga2 --model-path . --dht-prefix StableBeluga2-hf --port 8734"
 }
