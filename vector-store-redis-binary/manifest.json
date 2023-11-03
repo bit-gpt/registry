@@ -12,6 +12,10 @@
     "modelInfo": {},
     "defaultPort": 6380,
     "defaultExternalPort": 6380,
+    "weightsDirectoryUrl": "https://raw.githubusercontent.com/premAI-io/prem-services/main/vec-redis/",
+    "weightsFiles": [
+        "setup-redis.sh"
+    ],
     "binariesUrl": {
         "aarch64-apple-darwin": null,
         "x86_64-apple-darwin": null,
