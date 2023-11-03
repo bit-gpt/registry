@@ -22,7 +22,7 @@
         "aarch64-apple-darwin": "https://github.com/tiero/whisperd/releases/download/v0.1.12/whisperd-aarch64-apple-darwin",
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null,
-        "x86_64-unknown-linux-gnu": "https://github.com/tiero/whisperd/releases/download/v0.1.12/whisperd-linux-x86_64"
+        "x86_64-unknown-linux-gnu": "https://github.com/tiero/whisperd/releases/download/v0.1.12/whisperd-x86_64-unknown-linux-gnu"
     },
     "serveCommand": "whisperd-aarch64-apple-darwin serve  --model-path=ggml-tiny.bin --port=9446"
 }
