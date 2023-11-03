@@ -17,7 +17,7 @@
     "weightsDirectoryUrl": null,
     "weightsFiles": [],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://github.com/premAI-io/prem-services/releases/download/v1/ebd-all-minilm-1-aarch64-apple-darwin",
+        "aarch64-apple-darwin": "https://github.com/tiero/prem-services/releases/download/v1/ebd-all-minilm-1-aarch64-apple-darwin",
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
