@@ -2,6 +2,8 @@
     "id": "falcon-180b-chat",
     "name": "Falcon 180B Chat",
     "comingSoon": true,
+    "petals": true,
+    "petals_id": "falcon-180B-chat",
     "description": "Falcon 180B Chat, developed by TII, is a 180B parameters causal decoder-only model trained on 1,500B tokens of RefinedWeb enhanced with curated corpora. The model is particularly designed for commercial use and its inference can be run on various GPU configurations.",
     "documentation": "",
     "icon": "",

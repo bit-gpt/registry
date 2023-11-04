@@ -2,6 +2,8 @@
     "id": "llama-2-70b-chat-hf",
     "name": "Llama v2 70B Chat",
     "comingSoon": true,
+    "petals": true,
+    "petals_id": "Llama-2-70b-chat-hf",
     "description": "Llama v2 70B Chat, developed by Meta, is an auto-regressive language model that uses an optimized transformer architecture. It's a 70B parameters finetuned Chat model version using supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. It's released under a custom commercial license.",
     "documentation": "",
     "icon": "",
