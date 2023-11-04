@@ -34,5 +34,5 @@
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "ebd-all-minilm-1-aarch64-apple-darwin --port=8444"
+    "serveCommand": "ebd-all-minilm-1-aarch64-apple-darwin --port=8444 --model-dir ."
 }
