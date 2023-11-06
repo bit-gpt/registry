@@ -14,14 +14,25 @@
     ],
     "defaultPort": 8444,
     "defaultExternalPort": 8444,
-    "weightsDirectoryUrl": "https://raw.githubusercontent.com/tiero/prem-services/main/ebd-all-minilm/",
+    "weightsDirectoryUrl": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/main/",
     "weightsFiles": [
-        "keep.txt"
+        "1_Pooling/config.json",
+        "config.json",
+        "config_sentence_transformers.json",
+        "data_config.json",
+        "modules.json",
+        "pytorch_model.bin",
+        "sentence_bert_config.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "train_script.py",
+        "vocab.txt"
     ],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://github.com/tiero/prem-services/releases/download/v1/ebd-all-minilm-1-aarch64-apple-darwin",
+        "aarch64-apple-darwin": "https://github.com/premAI-io/prem-services/releases/download/v1/ebd-all-minilm-1-aarch64-apple-darwin",
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "ebd-all-minilm-1-aarch64-apple-darwin --port=8444"
+    "serveCommand": "ebd-all-minilm-1-aarch64-apple-darwin --port=8444 --model-dir ."
 }
