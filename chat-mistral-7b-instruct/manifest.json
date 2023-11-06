@@ -13,7 +13,7 @@
     "interfaces": [
         "chat"
     ],
-    "defaultPort": 8447,
+    "defaultPort": 8000,
     "defaultExternalPort": 8447,
     "weightsDirectoryUrl": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/",
     "weightsFiles": [
