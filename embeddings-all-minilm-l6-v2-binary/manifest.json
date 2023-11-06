@@ -14,7 +14,7 @@
     ],
     "defaultPort": 8444,
     "defaultExternalPort": 8444,
-    "weightsDirectoryUrl": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/main/",
+    "weightsDirectoryUrl": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/",
     "weightsFiles": [
         "1_Pooling/config.json",
         "config.json",
