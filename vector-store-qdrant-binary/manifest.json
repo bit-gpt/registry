@@ -1,6 +1,6 @@
 {
     "id": "qdrant-vector-db-binary",
-    "name": "Qdrant Vector DB",
+    "name": "Qdrant",
     "description": "Qdrant - High-performance, massive-scale Vector Database for the next generation of AI",
     "documentation": "",
     "version": "1",
@@ -22,6 +22,6 @@
         "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "qdrant",
+    "serveCommand": "qdrant-aarch64-apple-darwin",
     "skipHealthCheck": true
 }
