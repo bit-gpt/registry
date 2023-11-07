@@ -18,10 +18,10 @@
         "keep.txt"
     ],
     "binariesUrl": {
-        "aarch64-apple-darwin": "https://github.com/qdrant/qdrant/releases/download/v1.6.1/qdrant-aarch64-apple-darwin.tar.gz",
-        "x86_64-apple-darwin": "https://github.com/qdrant/qdrant/releases/download/v1.6.1/qdrant-x86_64-apple-darwin.tar.gz",
+        "aarch64-apple-darwin": "https://github.com/tiero/qdrant/releases/download/v1/qdrant-aarch64-apple-darwin",
+        "x86_64-apple-darwin": null,
         "universal-apple-darwin": null
     },
-    "serveCommand": "setup-redis.sh --port 6380",
+    "serveCommand": "qdrant",
     "skipHealthCheck": true
 }
