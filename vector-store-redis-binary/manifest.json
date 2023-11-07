@@ -15,7 +15,7 @@
     },
     "defaultPort": 6380,
     "defaultExternalPort": 6380,
-    "weightsDirectoryUrl": "https://raw.githubusercontent.com/premAI-io/prem-services/main/vec-redis/",
+    "weightsDirectoryUrl": "https://raw.githubusercontent.com/premAI-io/prem-registry/main/",
     "weightsFiles": [
         "keep.txt"
     ],
