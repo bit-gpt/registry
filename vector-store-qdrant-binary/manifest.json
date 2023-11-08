@@ -1,0 +1,27 @@
+{
+    "id": "qdrant-vector-db-binary",
+    "name": "Qdrant",
+    "description": "Qdrant - High-performance, massive-scale Vector Database for the next generation of AI",
+    "documentation": "",
+    "version": "1",
+    "serviceType": "binary",
+    "beta": true,
+    "interfaces": [
+        "vector-store"
+    ],
+    "icon": "",
+    "modelInfo": {},
+    "defaultPort": 6333,
+    "defaultExternalPort": 6333,
+    "weightsDirectoryUrl": "https://raw.githubusercontent.com/premAI-io/prem-registry/main/",
+    "weightsFiles": [
+        "keep.txt"
+    ],
+    "binariesUrl": {
+        "aarch64-apple-darwin": "https://github.com/tiero/qdrant/releases/download/v1/qdrant-aarch64-apple-darwin",
+        "x86_64-apple-darwin": null,
+        "universal-apple-darwin": null
+    },
+    "serveCommand": "qdrant-aarch64-apple-darwin",
+    "skipHealthCheck": true
+}
