@@ -24,5 +24,5 @@
         "universal-apple-darwin": null,
         "x86_64-unknown-linux-gnu": "https://github.com/tiero/whisperd/releases/download/v0.1.12/whisperd-x86_64-unknown-linux-gnu"
     },
-    "serveCommand": "whisperd-aarch64-apple-darwin serve  --model-path=ggml-tiny.bin --port=9446"
+    "serveCommand": "whisperd-aarch64-apple-darwin serve  --model-path=ggml-large-v2-q5_0.bin --port=9446"
 }
