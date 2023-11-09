@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-Whisper Tiny is a compact version of OpenAI's Whisper model, designed for automatic speech recognition (ASR) and speech translation. Despite its smaller size, it retains the powerful capabilities of the larger models, making it suitable for applications where computational resources or storage space are limited. <a href='https://huggingface.co/openai/whisper-tiny' target='_blank'>Learn More</a>.
+Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper Large demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning. <a href='https://huggingface.co/openai/whisper-large-v2' target='_blank'>Learn More</a>.
 
 ## 💻 Hardware Requirements
 
