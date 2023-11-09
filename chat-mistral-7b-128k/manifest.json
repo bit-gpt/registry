@@ -1,0 +1,28 @@
+{
+    "id": "mistral-7b-128k",
+    "name": "Mistral 7B 128K",
+    "beta": true,
+    "description": "",
+    "documentation": "",
+    "serviceType": "binary",
+    "version": "1",
+    "icon": "",
+    "modelInfo": {
+        "memoryRequirements": 4800
+    },
+    "interfaces": [
+        "chat"
+    ],
+    "defaultPort": 8447,
+    "defaultExternalPort": 8447,
+    "weightsDirectoryUrl": "https://huggingface.co/TheBloke/Yarn-Mistral-7B-128k-GGUF/resolve/main/",
+    "weightsFiles": [
+        "yarn-mistral-7b-128k.Q4_K_M.gguf"
+    ],
+    "binariesUrl": {
+        "aarch64-apple-darwin": "https://github.com/premAI-io/prem-services/releases/download/v1/cht-llama-cpp-mistral-1-aarch64-apple-darwin",
+        "x86_64-apple-darwin": null,
+        "universal-apple-darwin": null
+    },
+    "serveCommand": "cht-llama-cpp-mistral-1-aarch64-apple-darwin --model-path=yarn-mistral-7b-128k.Q4_K_M.gguf --port=8447 --ctx=128000"
+}
